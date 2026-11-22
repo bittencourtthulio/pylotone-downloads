@@ -1,0 +1,952 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Novidades do Pylot.One</title>
+  <meta name="description" content="Tudo o que mudou no Pylot.One, versão a versão: telas novas, melhorias, correções e segurança. Versão mais recente: 0.1.18.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#2563eb">
+  <meta property="og:title" content="Novidades do Pylot.One">
+  <meta property="og:description" content="Versão 0.1.18: Squads no Canvas, abas e esqueletos.">
+  <link rel="icon" href="simbolo.svg" type="image/svg+xml">
+  <link rel="preload" href="fontes/chakra-700.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="estilo.css">
+  <script>try{var t=localStorage.getItem("nv-tema");if(t==="claro"||t==="escuro")document.documentElement.dataset.tema=t;}catch(e){}</script>
+</head>
+<body data-ultima="0.1.18">
+  <a class="nv-pular" href="#conteudo">Pular para as versões</a>
+  <header class="nv-topo">
+    <div class="nv-topo-dentro">
+      <a class="nv-marca" href="#" aria-label="Pylot.One, início da página">
+        <img src="simbolo.svg" alt="" width="28" height="28">
+        <span>Pylot.One</span>
+        <span class="nv-marca-secao">Novidades</span>
+      </a>
+      <nav class="nv-topo-links" aria-label="Links">
+        <a href="https://www.pylot.one" rel="noopener">Site</a>
+        <a class="nv-botao-topo" href="https://github.com/bittencourtthulio/pylotone-downloads/releases/latest" rel="noopener">Baixar</a>
+        <button type="button" class="nv-tema" aria-label="Alternar tema claro e escuro" title="Alternar tema">
+          <svg class="nv-icone-sol" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="nv-icone-lua" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="nv-heroi" aria-labelledby="nv-heroi-titulo">
+      <div class="nv-heroi-dentro">
+        <p class="nv-sobretitulo">Novidades</p>
+        <h1 id="nv-heroi-titulo">Tudo o que mudou,<br><span>versão a versão.</span></h1>
+        <p class="nv-heroi-texto">Telas novas, melhorias, correções e segurança: o registro completo da evolução do Pylot.One, da fundação até hoje.</p>
+        <dl class="nv-numeros">
+          <div><dt>versões</dt><dd>18</dd></div>
+          <div><dt>mudanças registradas</dt><dd>79</dd></div>
+          <div><dt>telas novas</dt><dd>11</dd></div>
+        </dl>
+        <a class="nv-cartao-ultima" href="#v0.1.18">
+          <span class="nv-cartao-rotulo">Mais recente</span>
+          <span class="nv-cartao-versao">v0.1.18</span>
+          <span class="nv-cartao-titulo">Squads no Canvas, abas e esqueletos</span>
+          <span class="nv-cartao-data">19 de novembro de 2026</span>
+          <span class="nv-cartao-seta" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+    <div class="nv-boas-vindas" role="status" hidden>
+      <div class="nv-boas-vindas-dentro">
+        <span class="nv-boas-vindas-icone" aria-hidden="true">✦</span>
+        <div>
+          <strong>Parabéns, você está na versão <span data-instalada></span>.</strong>
+          <span>Abaixo está tudo o que chegou com ela.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="nv-barra" role="search">
+      <div class="nv-barra-dentro">
+        <label class="nv-busca">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <span class="nv-visivel-leitor">Buscar nas novidades</span>
+          <input type="search" placeholder="Buscar: Canvas, terminal, Squads…" autocomplete="off" spellcheck="false">
+        </label>
+        <div class="nv-filtros" role="group" aria-label="Filtrar por tipo">
+          <button type="button" class="nv-filtro" data-filtro="todos" aria-pressed="true">Tudo</button>
+          <button type="button" class="nv-filtro" data-filtro="novo" aria-pressed="false"><span class="nv-ponto" data-tipo="novo"></span>Novo</button>
+          <button type="button" class="nv-filtro" data-filtro="tela" aria-pressed="false"><span class="nv-ponto" data-tipo="tela"></span>Tela nova</button>
+          <button type="button" class="nv-filtro" data-filtro="melhoria" aria-pressed="false"><span class="nv-ponto" data-tipo="melhoria"></span>Melhoria</button>
+          <button type="button" class="nv-filtro" data-filtro="correcao" aria-pressed="false"><span class="nv-ponto" data-tipo="correcao"></span>Correção</button>
+          <button type="button" class="nv-filtro" data-filtro="desempenho" aria-pressed="false"><span class="nv-ponto" data-tipo="desempenho"></span>Desempenho</button>
+          <button type="button" class="nv-filtro" data-filtro="seguranca" aria-pressed="false"><span class="nv-ponto" data-tipo="seguranca"></span>Segurança</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="nv-corpo" id="conteudo">
+      <aside class="nv-indice" aria-label="Versões">
+        <p class="nv-indice-rotulo">Versões</p>
+        <ol>
+            <li><a href="#v0.1.18" data-alvo="v0.1.18"><span class="nv-indice-versao">v0.1.18</span><span class="nv-indice-titulo">Squads no Canvas, abas e esqueletos</span></a></li>
+            <li><a href="#v0.1.17" data-alvo="v0.1.17"><span class="nv-indice-versao">v0.1.17</span><span class="nv-indice-titulo">Terminais sem teto por janela</span></a></li>
+            <li><a href="#v0.1.16" data-alvo="v0.1.16"><span class="nv-indice-versao">v0.1.16</span><span class="nv-indice-titulo">Orquestrador mais direto</span></a></li>
+            <li><a href="#v0.1.15" data-alvo="v0.1.15"><span class="nv-indice-versao">v0.1.15</span><span class="nv-indice-titulo">Squads, Canvas e navegador dos agentes</span></a></li>
+            <li><a href="#v0.1.14" data-alvo="v0.1.14"><span class="nv-indice-versao">v0.1.14</span><span class="nv-indice-titulo">Automações, conversa e preferências</span></a></li>
+            <li><a href="#v0.1.13" data-alvo="v0.1.13"><span class="nv-indice-versao">v0.1.13</span><span class="nv-indice-titulo">Copiar e colar nos terminais</span></a></li>
+            <li><a href="#v0.1.12" data-alvo="v0.1.12"><span class="nv-indice-versao">v0.1.12</span><span class="nv-indice-titulo">Sessões, pontes e catálogo</span></a></li>
+            <li><a href="#v0.1.11" data-alvo="v0.1.11"><span class="nv-indice-versao">v0.1.11</span><span class="nv-indice-titulo">SQLite no Explorer</span></a></li>
+            <li><a href="#v0.1.10" data-alvo="v0.1.10"><span class="nv-indice-versao">v0.1.10</span><span class="nv-indice-titulo">Editor de arquivos</span></a></li>
+            <li><a href="#v0.1.9" data-alvo="v0.1.9"><span class="nv-indice-versao">v0.1.9</span><span class="nv-indice-titulo">Painéis de processos e conta</span></a></li>
+            <li><a href="#v0.1.8" data-alvo="v0.1.8"><span class="nv-indice-versao">v0.1.8</span><span class="nv-indice-titulo">Canvas de terminais</span></a></li>
+            <li><a href="#v0.1.6" data-alvo="v0.1.6"><span class="nv-indice-versao">v0.1.6</span><span class="nv-indice-titulo">Navegador interno</span></a></li>
+            <li><a href="#v0.1.5" data-alvo="v0.1.5"><span class="nv-indice-versao">v0.1.5</span><span class="nv-indice-titulo">Orquestrador, agentes e entregas verificadas</span></a></li>
+            <li><a href="#v0.1.4" data-alvo="v0.1.4"><span class="nv-indice-versao">v0.1.4</span><span class="nv-indice-titulo">Acompanhamento de processos</span></a></li>
+            <li><a href="#v0.1.3" data-alvo="v0.1.3"><span class="nv-indice-versao">v0.1.3</span><span class="nv-indice-titulo">Correções nos terminais e scouts</span></a></li>
+            <li><a href="#v0.1.1" data-alvo="v0.1.1"><span class="nv-indice-versao">v0.1.1</span><span class="nv-indice-titulo">Novo login e cadastro</span></a></li>
+            <li><a href="#v0.1.0" data-alvo="v0.1.0"><span class="nv-indice-versao">v0.1.0</span><span class="nv-indice-titulo">Primeira distribuição</span></a></li>
+            <li><a href="#v0.0" data-alvo="v0.0"><span class="nv-indice-versao">v0.0</span><span class="nv-indice-titulo">Fundação</span></a></li>
+        </ol>
+      </aside>
+      <div class="nv-linha">
+      <section class="nv-versao" id="v0.1.18" data-versao="0.1.18" aria-labelledby="v0.1.18-titulo">
+        <div class="nv-marco" aria-hidden="true"><span></span></div>
+        <header class="nv-versao-cabecalho">
+          <div class="nv-versao-meta">
+            <a class="nv-numero" href="#v0.1.18">v0.1.18</a>
+            <span class="nv-etiqueta nv-etiqueta-ultima">Mais recente</span>
+            <span class="nv-etiqueta nv-etiqueta-instalada" hidden>Sua versão</span>
+            <time datetime="2026-11-19">19 de novembro de 2026</time>
+          </div>
+          <h2 id="v0.1.18-titulo">Squads no Canvas, abas e esqueletos</h2>
+          <p class="nv-resumo">As integrantes das Squads ganham cards próprios no Canvas, as abas dos terminais ficam mais fáceis de organizar e projetos novos começam a partir de mais modelos.</p>
+          
+          <p class="nv-contagem">3 novidades · 4 melhorias</p>
+        </header>
+        <div class="nv-destaques">
+          <article class="nv-destaque" data-tipo="novo">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="novo">Novo</span><span class="nv-area">Canvas</span></div>
+            <h4>Cards de integrantes de Squad</h4>
+            <p>Arraste uma Squad para o Canvas e cada integrante aparece em um card com nome, função, CLI, modelo, estado e tarefa atual. Durante a abertura, o card mostra o progresso; em caso de falha, oferece nova tentativa no mesmo ponto.</p>
+          </article>
+          <article class="nv-destaque" data-tipo="novo">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="novo">Novo</span><span class="nv-area">Canvas</span></div>
+            <h4>Prévia do terminal no card</h4>
+            <p>Enquanto a integrante trabalha, o card exibe as linhas mais recentes do terminal. Um clique abre o terminal completo da mesma sessão; voltar ao card libera a visualização.</p>
+          </article>
+          <article class="nv-destaque" data-tipo="novo">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="novo">Novo</span><span class="nv-area">Projetos</span></div>
+            <h4>Mais esqueletos de projeto</h4>
+            <p>O catálogo de esqueletos ganhou modelos para landing pages, painéis administrativos e APIs. O orquestrador aplica o esqueleto localmente, sem sobrescrever arquivos.</p>
+          </article>
+        </div>
+        <ul class="nv-itens">
+          <li class="nv-item" data-tipo="melhoria">
+            <span class="nv-selo" data-tipo="melhoria">Melhoria</span>
+            <div class="nv-item-corpo">
+              <h4>Fechar as demais abas <span class="nv-area">Terminais</span></h4>
+              <p>O menu da aba do terminal ganhou a ação para fechar todas as outras abas de uma vez.</p>
+            </div>
+          </li>
+          <li class="nv-item" data-tipo="melhoria">
+            <span class="nv-selo" data-tipo="melhoria">Melhoria</span>
+            <div class="nv-item-corpo">
+              <h4>Assinatura e limites no painel de uso <span class="nv-area">Conta</span></h4>
+              <p>A situação da assinatura e os limites da conta aparecem junto do painel de uso, sem sair do aplicativo.</p>
+            </div>
+          </li>
+          <li class="nv-item" data-tipo="desempenho">
+            <span class="nv-selo" data-tipo="desempenho">Desempenho</span>
+            <div class="nv-item-corpo">
+              <h4>Explorer, workspaces e troca de projeto mais rápidos <span class="nv-area">Geral</span></h4>
+              <p>Rodada de desempenho dedicada ao uso pesado: o Explorer, o painel de workspaces e a troca de projeto respondem mais rápido mesmo com muitos terminais abertos.</p>
+            </div>
+          </li>
+          <li class="nv-item" data-tipo="melhoria">
+            <span class="nv-selo" data-tipo="melhoria">Melhoria</span>
+            <div class="nv-item-corpo">
+              <h4>Configuração das integrantes <span class="nv-area">Canvas</span></h4>
+              <p>O editor da integrante abre o modelo salvo e aplica a configuração na próxima abertura da Squad.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="nv-versao" id="v0.1.17" data-versao="0.1.17" aria-labelledby="v0.1.17-titulo">
+        <div class="nv-marco" aria-hidden="true"><span></span></div>
+        <header class="nv-versao-cabecalho">
+          <div class="nv-versao-meta">
+            <a class="nv-numero" href="#v0.1.17">v0.1.17</a>
+            
+            <span class="nv-etiqueta nv-etiqueta-instalada" hidden>Sua versão</span>
+            <time datetime="2026-11-17">17 de novembro de 2026</time>
+          </div>
+          <h2 id="v0.1.17-titulo">Terminais sem teto por janela</h2>
+          <p class="nv-resumo">Versão interna, publicada junto com a 0.1.18. Remove o limite de sessões por janela e amplia o que a grade e o Canvas conseguem restaurar.</p>
+          <p class="nv-nota">Esta versão foi distribuída junto com a 0.1.18.</p>
+          <p class="nv-contagem">2 melhorias</p>
+        </header>
+        <div class="nv-destaques">
+          <article class="nv-destaque" data-tipo="melhoria">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="melhoria">Melhoria</span><span class="nv-area">Terminais</span></div>
+            <h4>Sem o limite de 16 terminais</h4>
+            <p>Abra quantas sessões o seu trabalho pedir na mesma janela; o limite fixo de 16 deixou de existir.</p>
+          </article>
+        </div>
+        <ul class="nv-itens">
+          <li class="nv-item" data-tipo="melhoria">
+            <span class="nv-selo" data-tipo="melhoria">Melhoria</span>
+            <div class="nv-item-corpo">
+              <h4>Mais de 64 terminais restaurados <span class="nv-area">Canvas</span></h4>
+              <p>A grade e o Canvas salvam e restauram mais de 64 terminais no mesmo workspace.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="nv-versao" id="v0.1.16" data-versao="0.1.16" aria-labelledby="v0.1.16-titulo">
+        <div class="nv-marco" aria-hidden="true"><span></span></div>
+        <header class="nv-versao-cabecalho">
+          <div class="nv-versao-meta">
+            <a class="nv-numero" href="#v0.1.16">v0.1.16</a>
+            
+            <span class="nv-etiqueta nv-etiqueta-instalada" hidden>Sua versão</span>
+            <time datetime="2026-11-17">17 de novembro de 2026</time>
+          </div>
+          <h2 id="v0.1.16-titulo">Orquestrador mais direto</h2>
+          <p class="nv-resumo">O orquestrador abre em um clique, suas configurações ficam em um só painel e alternar entre Canvas e grade ficou mais rápido.</p>
+          
+          <p class="nv-contagem">2 novidades · 1 melhoria · 1 correção</p>
+        </header>
+        <div class="nv-destaques">
+          <article class="nv-destaque" data-tipo="novo">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="novo">Novo</span><span class="nv-area">Orquestração</span></div>
+            <h4>Abertura direta do orquestrador</h4>
+            <p>O orquestrador abre diretamente e reúne suas configurações em um painel com salvamento automático.</p>
+          </article>
+          <article class="nv-destaque" data-tipo="novo">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="novo">Novo</span><span class="nv-area">Terminais</span></div>
+            <h4>Atalho entre Canvas e grade</h4>
+            <p>Um botão no cabeçalho alterna entre o Canvas e a grade de terminais sem perder as sessões.</p>
+          </article>
+        </div>
+        <ul class="nv-itens">
+          <li class="nv-item" data-tipo="melhoria">
+            <span class="nv-selo" data-tipo="melhoria">Melhoria</span>
+            <div class="nv-item-corpo">
+              <h4>Copiar o ID da sessão <span class="nv-area">Terminais</span></h4>
+              <p>O menu do terminal ganhou a ação de copiar o ID nativo da sessão da CLI, útil para retomar a conversa fora do app.</p>
+            </div>
+          </li>
+          <li class="nv-item" data-tipo="correcao">
+            <span class="nv-selo" data-tipo="correcao">Correção</span>
+            <div class="nv-item-corpo">
+              <h4>Codex com instruções extensas <span class="nv-area">Windows</span></h4>
+              <p>Corrigida a abertura do Codex no Windows quando as instruções de orquestração eram muito longas.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="nv-versao" id="v0.1.15" data-versao="0.1.15" aria-labelledby="v0.1.15-titulo">
+        <div class="nv-marco" aria-hidden="true"><span></span></div>
+        <header class="nv-versao-cabecalho">
+          <div class="nv-versao-meta">
+            <a class="nv-numero" href="#v0.1.15">v0.1.15</a>
+            
+            <span class="nv-etiqueta nv-etiqueta-instalada" hidden>Sua versão</span>
+            <time datetime="2026-11-17">17 de novembro de 2026</time>
+          </div>
+          <h2 id="v0.1.15-titulo">Squads, Canvas e navegador dos agentes</h2>
+          <p class="nv-resumo">Equipes de terminais reutilizáveis, arquivos editáveis no Canvas e um navegador integrado que os agentes controlam enquanto você acompanha.</p>
+          
+          <p class="nv-contagem">2 telas novas · 4 novidades · 2 melhorias · 1 correção</p>
+        </header>
+        <div class="nv-destaques">
+          <article class="nv-destaque" data-tipo="tela">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="tela">Tela nova</span><span class="nv-area">Squads</span></div>
+            <h4>Squads de terminais</h4>
+            <p>Monte equipes com integrantes persistentes, cada uma com sua CLI, modelo e nível de esforço. Abra a Squad inteira de uma vez e reutilize em outros projetos.</p>
+          </article>
+          <article class="nv-destaque" data-tipo="tela">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="tela">Tela nova</span><span class="nv-area">Squads</span></div>
+            <h4>Marketplace de Squads</h4>
+            <p>Um catálogo local de Squads prontas para começar mais rápido, que você pode instalar e adaptar.</p>
+          </article>
+          <article class="nv-destaque" data-tipo="novo">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="novo">Novo</span><span class="nv-area">Navegador</span></div>
+            <h4>Navegador controlado pelos agentes</h4>
+            <p>Os agentes navegam, clicam e preenchem páginas em um navegador integrado. Cada ação fica visível e você pode interromper a qualquer momento.</p>
+          </article>
+        </div>
+        <ul class="nv-itens">
+          <li class="nv-item" data-tipo="novo">
+            <span class="nv-selo" data-tipo="novo">Novo</span>
+            <div class="nv-item-corpo">
+              <h4>Arquivos editáveis e prévias HTML <span class="nv-area">Canvas</span></h4>
+              <p>Abra arquivos no Canvas para editar ao lado dos terminais. Prévias HTML acompanham as mudanças que os agentes fazem.</p>
+            </div>
+          </li>
+          <li class="nv-item" data-tipo="novo">
+            <span class="nv-selo" data-tipo="novo">Novo</span>
+            <div class="nv-item-corpo">
+              <h4>Grupos de Squads conectados <span class="nv-area">Canvas</span></h4>
+              <p>Organize as integrantes em grupos no Canvas e veja como elas se conectam.</p>
+            </div>
+          </li>
+          <li class="nv-item" data-tipo="novo">
+            <span class="nv-selo" data-tipo="novo">Novo</span>
+            <div class="nv-item-corpo">
+              <h4>Resultados e instruções por terminal <span class="nv-area">Orquestração</span></h4>
+              <p>Os resultados das orquestrações ganharam aba própria, e cada terminal pode receber instruções específicas.</p>
+            </div>
+          </li>
+          <li class="nv-item" data-tipo="melhoria">
+            <span class="nv-selo" data-tipo="melhoria">Melhoria</span>
+            <div class="nv-item-corpo">
+              <h4>Novo aviso de atualização <span class="nv-area">Atualizações</span></h4>
+              <p>Um aviso discreto no canto da tela mostra quando há versão nova, sem interromper o trabalho.</p>
+            </div>
+          </li>
+          <li class="nv-item" data-tipo="correcao">
+            <span class="nv-selo" data-tipo="correcao">Correção</span>
+            <div class="nv-item-corpo">
+              <h4>Modelos, atividade e recuperação <span class="nv-area">Terminais</span></h4>
+              <p>Correções na identificação dos modelos, no indicador de atividade dos agentes e na recuperação dos terminais sem repetir a saída.</p>
+            </div>
+          </li>
+          <li class="nv-item" data-tipo="desempenho">
+            <span class="nv-selo" data-tipo="desempenho">Desempenho</span>
+            <div class="nv-item-corpo">
+              <h4>Canvas sob demanda <span class="nv-area">Canvas</span></h4>
+              <p>Partes do Canvas carregam só quando usadas, mantendo a abertura do app leve.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="nv-versao" id="v0.1.14" data-versao="0.1.14" aria-labelledby="v0.1.14-titulo">
+        <div class="nv-marco" aria-hidden="true"><span></span></div>
+        <header class="nv-versao-cabecalho">
+          <div class="nv-versao-meta">
+            <a class="nv-numero" href="#v0.1.14">v0.1.14</a>
+            
+            <span class="nv-etiqueta nv-etiqueta-instalada" hidden>Sua versão</span>
+            <time datetime="2026-11-14">14 de novembro de 2026</time>
+          </div>
+          <h2 id="v0.1.14-titulo">Automações, conversa e preferências</h2>
+          <p class="nv-resumo">Tarefas agendadas, um modo de conversa para os terminais e preferências reorganizadas com salvamento automático.</p>
+          
+          <p class="nv-contagem">2 telas novas · 2 novidades · 3 melhorias · 1 de segurança</p>
+        </header>
+        <div class="nv-destaques">
+          <article class="nv-destaque" data-tipo="tela">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="tela">Tela nova</span><span class="nv-area">Automações</span></div>
+            <h4>Automações agendadas</h4>
+            <p>Programe tarefas para rodar nos terminais em horários definidos e consulte o histórico de cada execução.</p>
+          </article>
+          <article class="nv-destaque" data-tipo="novo">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="novo">Novo</span><span class="nv-area">Terminais</span></div>
+            <h4>Modo de conversa</h4>
+            <p>Converse com o Claude e o Codex em uma interface de chat sobre o terminal, com anexos, ditado por voz e aprovações.</p>
+          </article>
+          <article class="nv-destaque" data-tipo="tela">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="tela">Tela nova</span><span class="nv-area">Sistema</span></div>
+            <h4>Gerenciador de recursos e portas locais</h4>
+            <p>Veja o consumo de CPU e memória dos processos e as portas locais abertas pelos seus projetos, com ação para encerrar.</p>
+          </article>
+        </div>
+        <ul class="nv-itens">
+          <li class="nv-item" data-tipo="novo">
+            <span class="nv-selo" data-tipo="novo">Novo</span>
+            <div class="nv-item-corpo">
+              <h4>Cotas das CLIs <span class="nv-area">Conta</span></h4>
+              <p>Consulte o quanto resta das cotas de uso das CLIs conectadas.</p>
+            </div>
+          </li>
+          <li class="nv-item" data-tipo="melhoria">
+            <span class="nv-selo" data-tipo="melhoria">Melhoria</span>
+            <div class="nv-item-corpo">
+              <h4>Preferências com salvamento automático <span class="nv-area">Preferências</span></h4>
+              <p>As preferências ganharam índice lateral e salvam cada alteração na hora, sem botão de confirmar.</p>
+            </div>
+          </li>
+          <li class="nv-item" data-tipo="melhoria">
+            <span class="nv-selo" data-tipo="melhoria">Melhoria</span>
+            <div class="nv-item-corpo">
+              <h4>Listagens padronizadas e tema claro revisado <span class="nv-area">Interface</span></h4>
+              <p>Listagens com busca e filtros no mesmo padrão em todo o app, e o tema claro com contraste revisado.</p>
+            </div>
+          </li>
+          <li class="nv-item" data-tipo="melhoria">
+            <span class="nv-selo" data-tipo="melhoria">Melhoria</span>
+            <div class="nv-item-corpo">
+              <h4>Explorer e ditado <span class="nv-area">Explorer</span></h4>
+              <p>Melhorias de navegação no Explorer e na precisão do ditado.</p>
+            </div>
+          </li>
+          <li class="nv-item" data-tipo="seguranca">
+            <span class="nv-selo" data-tipo="seguranca">Segurança</span>
+            <div class="nv-item-corpo">
+              <h4>Métricas agregadas de uso <span class="nv-area">Privacidade</span></h4>
+              <p>A distribuição comercial passa a enviar métricas agregadas de uso vinculadas à conta. Nenhum conteúdo de arquivos, prompts ou terminais é enviado.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="nv-versao" id="v0.1.13" data-versao="0.1.13" aria-labelledby="v0.1.13-titulo">
+        <div class="nv-marco" aria-hidden="true"><span></span></div>
+        <header class="nv-versao-cabecalho">
+          <div class="nv-versao-meta">
+            <a class="nv-numero" href="#v0.1.13">v0.1.13</a>
+            
+            <span class="nv-etiqueta nv-etiqueta-instalada" hidden>Sua versão</span>
+            <time datetime="2026-11-12">12 de novembro de 2026</time>
+          </div>
+          <h2 id="v0.1.13-titulo">Copiar e colar nos terminais</h2>
+          <p class="nv-resumo">Atalhos de copiar e colar corrigidos no Windows e no Linux, sem perder o Ctrl+C para interromper.</p>
+          
+          <p class="nv-contagem">1 novidade · 1 melhoria · 1 correção</p>
+        </header>
+        <div class="nv-destaques">
+          <article class="nv-destaque" data-tipo="correcao">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="correcao">Correção</span><span class="nv-area">Terminais</span></div>
+            <h4>Ctrl+C e Ctrl+V que funcionam como esperado</h4>
+            <p>Ctrl+V e Ctrl+Shift+V colam pelo tratamento do app. Ctrl+C copia quando há seleção e continua interrompendo quando não há. Ctrl+Shift+C sempre copia.</p>
+          </article>
+        </div>
+        <ul class="nv-itens">
+          <li class="nv-item" data-tipo="melhoria">
+            <span class="nv-selo" data-tipo="melhoria">Melhoria</span>
+            <div class="nv-item-corpo">
+              <h4>Colagem completa <span class="nv-area">Terminais</span></h4>
+              <p>A colagem preserva o tratamento de texto, o anexo de imagem ou arquivo e a confirmação para conteúdo grande.</p>
+            </div>
+          </li>
+          <li class="nv-item" data-tipo="novo">
+            <span class="nv-selo" data-tipo="novo">Novo</span>
+            <div class="nv-item-corpo">
+              <h4>Menu de contexto com Copiar e Colar <span class="nv-area">Interface</span></h4>
+              <p>Clique com o botão direito em campos editáveis e terminais para copiar e colar.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="nv-versao" id="v0.1.12" data-versao="0.1.12" aria-labelledby="v0.1.12-titulo">
+        <div class="nv-marco" aria-hidden="true"><span></span></div>
+        <header class="nv-versao-cabecalho">
+          <div class="nv-versao-meta">
+            <a class="nv-numero" href="#v0.1.12">v0.1.12</a>
+            
+            <span class="nv-etiqueta nv-etiqueta-instalada" hidden>Sua versão</span>
+            <time datetime="2026-11-12">12 de novembro de 2026</time>
+          </div>
+          <h2 id="v0.1.12-titulo">Sessões, pontes e catálogo</h2>
+          <p class="nv-resumo">Um novo menu de sessões, abas com nome e modelo, cartões de MCPs e workspaces e o catálogo de skills.</p>
+          
+          <p class="nv-contagem">1 tela nova · 2 novidades · 3 melhorias</p>
+        </header>
+        <div class="nv-destaques">
+          <article class="nv-destaque" data-tipo="novo">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="novo">Novo</span><span class="nv-area">Terminais</span></div>
+            <h4>Novo menu de sessões</h4>
+            <p>Escolha o modo da sessão ao abrir um terminal. As abas mostram o nome e o modelo em uso.</p>
+          </article>
+          <article class="nv-destaque" data-tipo="tela">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="tela">Tela nova</span><span class="nv-area">Catálogo</span></div>
+            <h4>Catálogo de skills e cartões de MCPs</h4>
+            <p>Navegue pelas skills disponíveis e veja MCPs e workspaces em cartões com as informações principais.</p>
+          </article>
+        </div>
+        <ul class="nv-itens">
+          <li class="nv-item" data-tipo="novo">
+            <span class="nv-selo" data-tipo="novo">Novo</span>
+            <div class="nv-item-corpo">
+              <h4>Política em painel próprio <span class="nv-area">Orquestração</span></h4>
+              <p>A política de roteamento é editada em um painel dedicado, e os tipos de tarefa ganharam descrição para orientar a IA.</p>
+            </div>
+          </li>
+          <li class="nv-item" data-tipo="melhoria">
+            <span class="nv-selo" data-tipo="melhoria">Melhoria</span>
+            <div class="nv-item-corpo">
+              <h4>Decisões de roteamento <span class="nv-area">Orquestração</span></h4>
+              <p>Integração de decisões corrigida, com diagnóstico de conexão e alternativa local quando o serviço não responde.</p>
+            </div>
+          </li>
+          <li class="nv-item" data-tipo="melhoria">
+            <span class="nv-selo" data-tipo="melhoria">Melhoria</span>
+            <div class="nv-item-corpo">
+              <h4>Versão instalada no rodapé <span class="nv-area">Atualizações</span></h4>
+              <p>A versão instalada aparece no rodapé; um clique abre as atualizações.</p>
+            </div>
+          </li>
+          <li class="nv-item" data-tipo="melhoria">
+            <span class="nv-selo" data-tipo="melhoria">Melhoria</span>
+            <div class="nv-item-corpo">
+              <h4>Telas pequenas <span class="nv-area">Interface</span></h4>
+              <p>Rolagem melhor em janelas menores e apresentação revisada das pontes de CLIs.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="nv-versao" id="v0.1.11" data-versao="0.1.11" aria-labelledby="v0.1.11-titulo">
+        <div class="nv-marco" aria-hidden="true"><span></span></div>
+        <header class="nv-versao-cabecalho">
+          <div class="nv-versao-meta">
+            <a class="nv-numero" href="#v0.1.11">v0.1.11</a>
+            
+            <span class="nv-etiqueta nv-etiqueta-instalada" hidden>Sua versão</span>
+            <time datetime="2026-11-12">12 de novembro de 2026</time>
+          </div>
+          <h2 id="v0.1.11-titulo">SQLite no Explorer</h2>
+          <p class="nv-resumo">Abra bancos SQLite direto do Explorer, crie arquivos e pastas na árvore e receba avisos de atualização a cada hora.</p>
+          
+          <p class="nv-contagem">1 tela nova · 1 novidade · 1 melhoria · 1 correção</p>
+        </header>
+        <div class="nv-destaques">
+          <article class="nv-destaque" data-tipo="tela">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="tela">Tela nova</span><span class="nv-area">Explorer</span></div>
+            <h4>Visualizador SQLite</h4>
+            <p>Abra arquivos SQLite para ver tabelas, estrutura e dados paginados, em modo somente leitura.</p>
+          </article>
+          <article class="nv-destaque" data-tipo="novo">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="novo">Novo</span><span class="nv-area">Explorer</span></div>
+            <h4>Criar e renomear na árvore</h4>
+            <p>Crie arquivos e pastas e renomeie itens diretamente na árvore do Explorer.</p>
+          </article>
+        </div>
+        <ul class="nv-itens">
+          <li class="nv-item" data-tipo="melhoria">
+            <span class="nv-selo" data-tipo="melhoria">Melhoria</span>
+            <div class="nv-item-corpo">
+              <h4>Consulta a cada hora <span class="nv-area">Atualizações</span></h4>
+              <p>O app consulta atualizações a cada hora e avisa de forma discreta. Download e reinício acontecem só quando você clicar.</p>
+            </div>
+          </li>
+          <li class="nv-item" data-tipo="correcao">
+            <span class="nv-selo" data-tipo="correcao">Correção</span>
+            <div class="nv-item-corpo">
+              <h4>Sem aviso de compatibilidade <span class="nv-area">macOS</span></h4>
+              <p>O pacote para Mac Apple Silicon deixou de incluir binários Intel desnecessários, removendo o aviso do macOS.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="nv-versao" id="v0.1.10" data-versao="0.1.10" aria-labelledby="v0.1.10-titulo">
+        <div class="nv-marco" aria-hidden="true"><span></span></div>
+        <header class="nv-versao-cabecalho">
+          <div class="nv-versao-meta">
+            <a class="nv-numero" href="#v0.1.10">v0.1.10</a>
+            
+            <span class="nv-etiqueta nv-etiqueta-instalada" hidden>Sua versão</span>
+            <time datetime="2026-11-12">12 de novembro de 2026</time>
+          </div>
+          <h2 id="v0.1.10-titulo">Editor de arquivos</h2>
+          <p class="nv-resumo">Um editor completo dentro do app e instaladores para Mac Intel.</p>
+          
+          <p class="nv-contagem">1 tela nova · 3 novidades</p>
+        </header>
+        <div class="nv-destaques">
+          <article class="nv-destaque" data-tipo="tela">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="tela">Tela nova</span><span class="nv-area">Editor</span></div>
+            <h4>Editor Monaco</h4>
+            <p>Edite arquivos com realce de sintaxe, busca, salvamento automático e comparação quando o arquivo muda no disco.</p>
+          </article>
+          <article class="nv-destaque" data-tipo="novo">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="novo">Novo</span><span class="nv-area">Editor</span></div>
+            <h4>Prévia de Markdown</h4>
+            <p>Veja o Markdown renderizado ao lado do texto. Rascunhos são preservados ao alternar entre abas.</p>
+          </article>
+        </div>
+        <ul class="nv-itens">
+          <li class="nv-item" data-tipo="novo">
+            <span class="nv-selo" data-tipo="novo">Novo</span>
+            <div class="nv-item-corpo">
+              <h4>Renomear e editar arquivos de ambiente <span class="nv-area">Explorer</span></h4>
+              <p>Renomeie arquivos pelo Explorer e edite manualmente os arquivos de ambiente do próprio projeto. Agentes continuam sem acesso a eles.</p>
+            </div>
+          </li>
+          <li class="nv-item" data-tipo="novo">
+            <span class="nv-selo" data-tipo="novo">Novo</span>
+            <div class="nv-item-corpo">
+              <h4>Mac Intel <span class="nv-area">Instalação</span></h4>
+              <p>Instaladores para Mac Apple Silicon, Mac Intel (universal) e Windows x64.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="nv-versao" id="v0.1.9" data-versao="0.1.9" aria-labelledby="v0.1.9-titulo">
+        <div class="nv-marco" aria-hidden="true"><span></span></div>
+        <header class="nv-versao-cabecalho">
+          <div class="nv-versao-meta">
+            <a class="nv-numero" href="#v0.1.9">v0.1.9</a>
+            
+            <span class="nv-etiqueta nv-etiqueta-instalada" hidden>Sua versão</span>
+            <time datetime="2026-11-11">11 de novembro de 2026</time>
+          </div>
+          <h2 id="v0.1.9-titulo">Painéis de processos e conta</h2>
+          <p class="nv-resumo">Painéis de processos que aparecem só quando há o que mostrar e correções na gestão da assinatura.</p>
+          
+          <p class="nv-contagem">1 melhoria · 1 correção</p>
+        </header>
+        <div class="nv-destaques">
+          <article class="nv-destaque" data-tipo="melhoria">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="melhoria">Melhoria</span><span class="nv-area">Processos</span></div>
+            <h4>Painéis só com saída real</h4>
+            <p>Processos auxiliares silenciosos não abrem painéis vazios. O painel aparece quando há saída e fecha sozinho quando o processo termina.</p>
+          </article>
+        </div>
+        <ul class="nv-itens">
+          <li class="nv-item" data-tipo="correcao">
+            <span class="nv-selo" data-tipo="correcao">Correção</span>
+            <div class="nv-item-corpo">
+              <h4>Assinaturas <span class="nv-area">Conta</span></h4>
+              <p>Espera de ativação sem nova cobrança, cancelamento após estorno integral e retomada após inadimplência.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="nv-versao" id="v0.1.8" data-versao="0.1.8" aria-labelledby="v0.1.8-titulo">
+        <div class="nv-marco" aria-hidden="true"><span></span></div>
+        <header class="nv-versao-cabecalho">
+          <div class="nv-versao-meta">
+            <a class="nv-numero" href="#v0.1.8">v0.1.8</a>
+            
+            <span class="nv-etiqueta nv-etiqueta-instalada" hidden>Sua versão</span>
+            <time datetime="2026-11-10">10 de novembro de 2026</time>
+          </div>
+          <h2 id="v0.1.8-titulo">Canvas de terminais</h2>
+          <p class="nv-resumo">Um espaço livre para organizar terminais e uma orquestração autônoma mais refinada.</p>
+          
+          <p class="nv-contagem">1 tela nova · 1 novidade · 1 melhoria</p>
+        </header>
+        <div class="nv-destaques">
+          <article class="nv-destaque" data-tipo="tela">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="tela">Tela nova</span><span class="nv-area">Canvas</span></div>
+            <h4>Canvas de terminais</h4>
+            <p>Organize, mova e redimensione os painéis livremente, com zoom e prévia de cada terminal.</p>
+          </article>
+          <article class="nv-destaque" data-tipo="novo">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="novo">Novo</span><span class="nv-area">Orquestração</span></div>
+            <h4>Orquestração autônoma</h4>
+            <p>Perguntas dos workers são encaminhadas ao orquestrador, que decide e segue o trabalho. Projetos novos podem começar de esqueletos locais.</p>
+          </article>
+        </div>
+        <ul class="nv-itens">
+          <li class="nv-item" data-tipo="melhoria">
+            <span class="nv-selo" data-tipo="melhoria">Melhoria</span>
+            <div class="nv-item-corpo">
+              <h4>Pontes, captura e custos <span class="nv-area">Terminais</span></h4>
+              <p>Melhorias nas pontes de CLIs, na captura de tela, no acompanhamento de custos e no encerramento de processos.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="nv-versao" id="v0.1.6" data-versao="0.1.6" aria-labelledby="v0.1.6-titulo">
+        <div class="nv-marco" aria-hidden="true"><span></span></div>
+        <header class="nv-versao-cabecalho">
+          <div class="nv-versao-meta">
+            <a class="nv-numero" href="#v0.1.6">v0.1.6</a>
+            
+            <span class="nv-etiqueta nv-etiqueta-instalada" hidden>Sua versão</span>
+            <time datetime="2026-11-10">10 de novembro de 2026</time>
+          </div>
+          <h2 id="v0.1.6-titulo">Navegador interno</h2>
+          <p class="nv-resumo">Links dos terminais abrem onde você preferir, e um navegador interno isolado chega ao app.</p>
+          
+          <p class="nv-contagem">1 tela nova · 1 novidade · 1 correção</p>
+        </header>
+        <div class="nv-destaques">
+          <article class="nv-destaque" data-tipo="tela">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="tela">Tela nova</span><span class="nv-area">Navegador</span></div>
+            <h4>Navegador interno</h4>
+            <p>Um navegador isolado do aplicativo, com barra de endereço, histórico, recarga e abas.</p>
+          </article>
+          <article class="nv-destaque" data-tipo="novo">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="novo">Novo</span><span class="nv-area">Terminais</span></div>
+            <h4>Escolha onde abrir links</h4>
+            <p>Ao clicar em um link no terminal, escolha entre uma aba do navegador interno e o navegador do sistema.</p>
+          </article>
+        </div>
+        <ul class="nv-itens">
+          <li class="nv-item" data-tipo="correcao">
+            <span class="nv-selo" data-tipo="correcao">Correção</span>
+            <div class="nv-item-corpo">
+              <h4>Delegação mais confiável <span class="nv-area">Orquestração</span></h4>
+              <p>Correções no envio e no retorno de tarefas dos workers, na retomada da espera por entregas e na aplicação das políticas de aprovação.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="nv-versao" id="v0.1.5" data-versao="0.1.5" aria-labelledby="v0.1.5-titulo">
+        <div class="nv-marco" aria-hidden="true"><span></span></div>
+        <header class="nv-versao-cabecalho">
+          <div class="nv-versao-meta">
+            <a class="nv-numero" href="#v0.1.5">v0.1.5</a>
+            
+            <span class="nv-etiqueta nv-etiqueta-instalada" hidden>Sua versão</span>
+            <time datetime="2026-11-09">9 de novembro de 2026</time>
+          </div>
+          <h2 id="v0.1.5-titulo">Orquestrador, agentes e entregas verificadas</h2>
+          <p class="nv-resumo">O orquestrador passa a trabalhar com briefing estruturado, papéis e dependências, e as entregas chegam verificadas.</p>
+          
+          <p class="nv-contagem">1 tela nova · 3 novidades · 1 melhoria · 1 de segurança</p>
+        </header>
+        <div class="nv-destaques">
+          <article class="nv-destaque" data-tipo="novo">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="novo">Novo</span><span class="nv-area">Orquestração</span></div>
+            <h4>Briefing estruturado</h4>
+            <p>O orquestrador distribui o trabalho com briefing, roteamento por papel, dependências entre workers e espera por eventos.</p>
+          </article>
+          <article class="nv-destaque" data-tipo="tela">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="tela">Tela nova</span><span class="nv-area">Agentes</span></div>
+            <h4>Aba Agentes e bandeja de aprovações</h4>
+            <p>Acompanhe todos os agentes em uma aba própria, veja resultados consolidados e responda aprovações em uma bandeja única.</p>
+          </article>
+        </div>
+        <ul class="nv-itens">
+          <li class="nv-item" data-tipo="novo">
+            <span class="nv-selo" data-tipo="novo">Novo</span>
+            <div class="nv-item-corpo">
+              <h4>Entregas verificadas <span class="nv-area">Orquestração</span></h4>
+              <p>Cada entrega declara como foi verificada, passa por revisão posterior e respeita o escopo de arquivos combinado.</p>
+            </div>
+          </li>
+          <li class="nv-item" data-tipo="novo">
+            <span class="nv-selo" data-tipo="novo">Novo</span>
+            <div class="nv-item-corpo">
+              <h4>Captura de interfaces <span class="nv-area">Interface</span></h4>
+              <p>Capture telas locais em três larguras, com isolamento e bloqueio de rede externa.</p>
+            </div>
+          </li>
+          <li class="nv-item" data-tipo="melhoria">
+            <span class="nv-selo" data-tipo="melhoria">Melhoria</span>
+            <div class="nv-item-corpo">
+              <h4>Licença mais resiliente <span class="nv-area">Conta</span></h4>
+              <p>A licença é consultada a cada hora, com margem para oscilações de rede e recuperação ao reconectar.</p>
+            </div>
+          </li>
+          <li class="nv-item" data-tipo="seguranca">
+            <span class="nv-selo" data-tipo="seguranca">Segurança</span>
+            <div class="nv-item-corpo">
+              <h4>Atualizações assinadas <span class="nv-area">Atualizações</span></h4>
+              <p>Windows e Mac usam manifestos de atualização assinados e arquivos conferidos por hash. Tudo depende do seu consentimento e clique.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="nv-versao" id="v0.1.4" data-versao="0.1.4" aria-labelledby="v0.1.4-titulo">
+        <div class="nv-marco" aria-hidden="true"><span></span></div>
+        <header class="nv-versao-cabecalho">
+          <div class="nv-versao-meta">
+            <a class="nv-numero" href="#v0.1.4">v0.1.4</a>
+            
+            <span class="nv-etiqueta nv-etiqueta-instalada" hidden>Sua versão</span>
+            <time datetime="2026-11-09">9 de novembro de 2026</time>
+          </div>
+          <h2 id="v0.1.4-titulo">Acompanhamento de processos</h2>
+          <p class="nv-resumo">Veja os processos que as CLIs abrem e procure atualizações direto da barra lateral.</p>
+          
+          <p class="nv-contagem">2 novidades · 1 melhoria · 1 de segurança</p>
+        </header>
+        <div class="nv-destaques">
+          <article class="nv-destaque" data-tipo="novo">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="novo">Novo</span><span class="nv-area">Processos</span></div>
+            <h4>Processos das CLIs ao lado do agente</h4>
+            <p>Processos filhos de todas as CLIs aparecem no mesmo projeto, com comando, PID e estado reais, em um painel somente leitura.</p>
+          </article>
+          <article class="nv-destaque" data-tipo="novo">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="novo">Novo</span><span class="nv-area">Atualizações</span></div>
+            <h4>Procurar atualização na barra lateral</h4>
+            <p>A versão instalada e o botão de procurar atualização ficam na parte inferior da barra lateral.</p>
+          </article>
+        </div>
+        <ul class="nv-itens">
+          <li class="nv-item" data-tipo="melhoria">
+            <span class="nv-selo" data-tipo="melhoria">Melhoria</span>
+            <div class="nv-item-corpo">
+              <h4>Kimi e MiniMax Code com política de aprovação <span class="nv-area">Orquestração</span></h4>
+              <p>As duas CLIs recebem e aplicam a política de aprovação do projeto; dúvidas restantes vão ao orquestrador no modo Autônomo.</p>
+            </div>
+          </li>
+          <li class="nv-item" data-tipo="seguranca">
+            <span class="nv-selo" data-tipo="seguranca">Segurança</span>
+            <div class="nv-item-corpo">
+              <h4>Autorização por ferramenta <span class="nv-area">MCP</span></h4>
+              <p>Ferramentas internas conservam autorização por ferramenta e por painel, mesmo quando comandos e arquivos exigem aprovação.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="nv-versao" id="v0.1.3" data-versao="0.1.3" aria-labelledby="v0.1.3-titulo">
+        <div class="nv-marco" aria-hidden="true"><span></span></div>
+        <header class="nv-versao-cabecalho">
+          <div class="nv-versao-meta">
+            <a class="nv-numero" href="#v0.1.3">v0.1.3</a>
+            
+            <span class="nv-etiqueta nv-etiqueta-instalada" hidden>Sua versão</span>
+            <time datetime="2026-11-09">9 de novembro de 2026</time>
+          </div>
+          <h2 id="v0.1.3-titulo">Correções nos terminais e scouts</h2>
+          <p class="nv-resumo">Contadores, agrupamento e recuperação de agentes mais precisos.</p>
+          
+          <p class="nv-contagem">1 melhoria · 3 correções</p>
+        </header>
+        <div class="nv-destaques">
+          <article class="nv-destaque" data-tipo="correcao">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="correcao">Correção</span><span class="nv-area">Workspaces</span></div>
+            <h4>Contador de agentes correto</h4>
+            <p>Agentes encerrados deixam de contar no workspace, e sessões sem projeto não são atribuídas ao projeto selecionado.</p>
+          </article>
+        </div>
+        <ul class="nv-itens">
+          <li class="nv-item" data-tipo="correcao">
+            <span class="nv-selo" data-tipo="correcao">Correção</span>
+            <div class="nv-item-corpo">
+              <h4>Scouts e workers junto ao orquestrador <span class="nv-area">Orquestração</span></h4>
+              <p>Eles aparecem ao lado do orquestrador mesmo depois de falhas na recuperação de sessões antigas.</p>
+            </div>
+          </li>
+          <li class="nv-item" data-tipo="melhoria">
+            <span class="nv-selo" data-tipo="melhoria">Melhoria</span>
+            <div class="nv-item-corpo">
+              <h4>Abrir o painel do agente <span class="nv-area">Workspaces</span></h4>
+              <p>Clicar em um agente do workspace sincroniza e abre o painel dele.</p>
+            </div>
+          </li>
+          <li class="nv-item" data-tipo="correcao">
+            <span class="nv-selo" data-tipo="correcao">Correção</span>
+            <div class="nv-item-corpo">
+              <h4>Menos avisos falsos <span class="nv-area">Terminais</span></h4>
+              <p>O aviso recorrente de indisponibilidade do serviço de terminais foi removido, e o orquestrador responde ao menu de confiança do Codex em projetos confiáveis.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="nv-versao" id="v0.1.1" data-versao="0.1.1" aria-labelledby="v0.1.1-titulo">
+        <div class="nv-marco" aria-hidden="true"><span></span></div>
+        <header class="nv-versao-cabecalho">
+          <div class="nv-versao-meta">
+            <a class="nv-numero" href="#v0.1.1">v0.1.1</a>
+            
+            <span class="nv-etiqueta nv-etiqueta-instalada" hidden>Sua versão</span>
+            <time datetime="2026-11-09">9 de novembro de 2026</time>
+          </div>
+          <h2 id="v0.1.1-titulo">Novo login e cadastro</h2>
+          <p class="nv-resumo">Entrar e criar conta ficou mais simples, com a identidade azul do produto.</p>
+          
+          <p class="nv-contagem">1 tela nova · 1 melhoria</p>
+        </header>
+        <div class="nv-destaques">
+          <article class="nv-destaque" data-tipo="tela">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="tela">Tela nova</span><span class="nv-area">Conta</span></div>
+            <h4>Login e cadastro redesenhados</h4>
+            <p>Nova apresentação com confirmação de e-mail, validação da assinatura, opção de mostrar a senha e recuperação de falhas de conexão.</p>
+          </article>
+        </div>
+        <ul class="nv-itens">
+          <li class="nv-item" data-tipo="melhoria">
+            <span class="nv-selo" data-tipo="melhoria">Melhoria</span>
+            <div class="nv-item-corpo">
+              <h4>Temas e janelas menores <span class="nv-area">Interface</span></h4>
+              <p>Telas de acesso nos temas claro e escuro, ajustadas para janelas menores.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="nv-versao" id="v0.1.0" data-versao="0.1.0" aria-labelledby="v0.1.0-titulo">
+        <div class="nv-marco" aria-hidden="true"><span></span></div>
+        <header class="nv-versao-cabecalho">
+          <div class="nv-versao-meta">
+            <a class="nv-numero" href="#v0.1.0">v0.1.0</a>
+            
+            <span class="nv-etiqueta nv-etiqueta-instalada" hidden>Sua versão</span>
+            <time datetime="2026-11-09">9 de novembro de 2026</time>
+          </div>
+          <h2 id="v0.1.0-titulo">Primeira distribuição</h2>
+          <p class="nv-resumo">A primeira prévia pública para macOS Apple Silicon, assinada e notarizada pela Apple.</p>
+          
+          <p class="nv-contagem">2 novidades · 1 de segurança</p>
+        </header>
+        <div class="nv-destaques">
+          <article class="nv-destaque" data-tipo="novo">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="novo">Novo</span><span class="nv-area">Instalação</span></div>
+            <h4>Instalador para Mac Apple Silicon</h4>
+            <p>DMG e ZIP assinados com Developer ID e notarizados pela Apple. O download não exige cadastro.</p>
+          </article>
+        </div>
+        <ul class="nv-itens">
+          <li class="nv-item" data-tipo="novo">
+            <span class="nv-selo" data-tipo="novo">Novo</span>
+            <div class="nv-item-corpo">
+              <h4>Conta e assinatura no app <span class="nv-area">Conta</span></h4>
+              <p>Crie sua conta ou entre direto no aplicativo. O uso exige assinatura ativa.</p>
+            </div>
+          </li>
+          <li class="nv-item" data-tipo="seguranca">
+            <span class="nv-selo" data-tipo="seguranca">Segurança</span>
+            <div class="nv-item-corpo">
+              <h4>Arquivos conferíveis <span class="nv-area">Instalação</span></h4>
+              <p>Cada release traz os hashes SHA-256 dos arquivos publicados.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="nv-versao" id="v0.0" data-versao="0.0" aria-labelledby="v0.0-titulo">
+        <div class="nv-marco" aria-hidden="true"><span></span></div>
+        <header class="nv-versao-cabecalho">
+          <div class="nv-versao-meta">
+            <a class="nv-numero" href="#v0.0">v0.0</a>
+            
+            <span class="nv-etiqueta nv-etiqueta-instalada" hidden>Sua versão</span>
+            <time datetime="2026-10-01">1 de outubro de 2026</time>
+          </div>
+          <h2 id="v0.0-titulo">Fundação</h2>
+          <p class="nv-resumo">Antes da primeira distribuição: a base do ambiente de desenvolvimento com agentes de IA.</p>
+          <p class="nv-nota">Versões de desenvolvimento, sem instalador público.</p>
+          <p class="nv-contagem">4 novidades · 1 de segurança</p>
+        </header>
+        <div class="nv-destaques">
+          <article class="nv-destaque" data-tipo="novo">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="novo">Novo</span><span class="nv-area">Terminais</span></div>
+            <h4>Terminais reais das CLIs de IA</h4>
+            <p>Claude Code, Codex, Gemini, OpenCode e outras CLIs rodam em terminais reais, lado a lado, na mesma janela.</p>
+          </article>
+          <article class="nv-destaque" data-tipo="novo">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="novo">Novo</span><span class="nv-area">Terminais</span></div>
+            <h4>Sessões que sobrevivem ao app</h4>
+            <p>Os terminais rodam em um serviço próprio: feche o aplicativo e o trabalho continua de onde parou ao reabrir.</p>
+          </article>
+          <article class="nv-destaque" data-tipo="novo">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="novo">Novo</span><span class="nv-area">Orquestração</span></div>
+            <h4>Orquestrador e workers</h4>
+            <p>Um orquestrador distribui tarefas para workers em outros terminais por MCP, com token próprio para cada painel.</p>
+          </article>
+        </div>
+        <ul class="nv-itens">
+          <li class="nv-item" data-tipo="seguranca">
+            <span class="nv-selo" data-tipo="seguranca">Segurança</span>
+            <div class="nv-item-corpo">
+              <h4>Seguro por padrão <span class="nv-area">Segurança</span></h4>
+              <p>As CLIs abrem com aprovações normais; o modo automático depende de escolha explícita do workspace. Arquivos de segredo nunca são lidos pelos agentes.</p>
+            </div>
+          </li>
+          <li class="nv-item" data-tipo="novo">
+            <span class="nv-selo" data-tipo="novo">Novo</span>
+            <div class="nv-item-corpo">
+              <h4>Temas claro e escuro <span class="nv-area">Interface</span></h4>
+              <p>Interface em português, com tema claro e escuro e área de trabalho dos terminais maximizada.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+        <p class="nv-vazio" role="status" hidden>Nenhuma mudança encontrada com esses filtros.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="nv-rodape">
+    <div class="nv-rodape-dentro">
+      <span>© 2026 Expx · Pylot.One</span>
+      <span>Atualizações só com o seu consentimento e clique, sempre com arquivos assinados.</span>
+    </div>
+  </footer>
+  <script src="pagina.js" defer></script>
+</body>
+</html>
