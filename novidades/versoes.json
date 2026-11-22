@@ -2,18 +2,147 @@
   "esquema": 1,
   "versoes": [
     {
+      "versao": "0.1.19",
+      "data": "2026-11-22",
+      "titulo": "Bots, computador dos bots e modo Off",
+      "resumo": "Assistentes que trabalham por você mesmo longe do teclado, com o próprio navegador, mais um modo em que o app não interfere nas suas CLIs e uma página com todas as novidades.",
+      "itens": [
+        {
+          "tipo": "tela",
+          "area": "Bots",
+          "destaque": true,
+          "titulo": "Tela de Bots",
+          "texto": "Uma tela nova para criar e acompanhar bots: barra com fixados, grupos e ocultos, conversa com cartões, painel de detalhes, biblioteca, terminal, rotinas e ajustes. Cada bot tem pasta própria, personalidade e memória."
+        },
+        {
+          "tipo": "novo",
+          "area": "Bots",
+          "destaque": true,
+          "titulo": "Bots nos seus canais",
+          "texto": "Peça trabalho pelo Telegram, GitHub, Slack ou Linear. Os tokens ficam no cofre, a permissão é por quem pode pedir, e o cartão Precisa de você deixa aprovar ou negar uma ação direto da conversa ou do celular."
+        },
+        {
+          "tipo": "novo",
+          "area": "Bots",
+          "destaque": true,
+          "titulo": "Computador dos bots",
+          "texto": "Cada bot pode usar um navegador próprio e persistente para pesquisar, entrar em sites e baixar arquivos. Você acompanha tudo, pode assumir, devolver ou parar a qualquer momento, e o conteúdo das páginas passa por uma proteção contra injeção de comandos."
+        },
+        {
+          "tipo": "novo",
+          "area": "Bots",
+          "titulo": "Rotinas, importação e pacotes",
+          "texto": "Automações podem ter um bot como alvo e disparar por eventos. Importe bots do OpenClaw e do Hermes, ou compartilhe um bot em um pacote .pylotbot."
+        },
+        {
+          "tipo": "novo",
+          "area": "Bots",
+          "titulo": "Conversa seguida, voz e anexos",
+          "texto": "Peça várias vezes ao mesmo bot sem reabrir terminal. A conversa aceita ditado por voz, anexos e um painel de detalhes que você redimensiona."
+        },
+        {
+          "tipo": "novo",
+          "area": "Orquestração",
+          "destaque": true,
+          "titulo": "Modo Off",
+          "texto": "Antes do Ultra, o novo modo Off deixa o app fora do caminho: nada é injetado nas CLIs e você usa só o harness da CLI e do projeto. Conta, modelo, esforço e aprovações continuam valendo."
+        },
+        {
+          "tipo": "novo",
+          "area": "Geral",
+          "destaque": true,
+          "titulo": "Página de novidades",
+          "texto": "Todas as versões com o que mudou, filtros por tipo e busca. Na primeira abertura depois de atualizar, o app parabeniza e abre a página com um clique."
+        },
+        {
+          "tipo": "melhoria",
+          "area": "Orquestração",
+          "titulo": "Ultra mais direto",
+          "texto": "O ritmo escolhido depois de abrir o orquestrador vale até o primeiro agente, o Rápido dispensa capturas desnecessárias e há um esqueleto de app estático local para começar sem dependências."
+        },
+        {
+          "tipo": "melhoria",
+          "area": "Terminais",
+          "titulo": "Prévia de páginas com formulários",
+          "texto": "A prévia das páginas geradas pelos agentes agora envia formulários localmente, sem permitir que dados saiam para fora."
+        },
+        {
+          "tipo": "desempenho",
+          "area": "Explorer",
+          "titulo": "Explorer mais rápido",
+          "texto": "Pastas com milhares de arquivos respondem quase duas vezes mais rápido ao navegar pelas setas."
+        },
+        {
+          "tipo": "correcao",
+          "area": "Geral",
+          "titulo": "Revisar escopo",
+          "texto": "As abas do modal de revisão ficam dentro do próprio modal e não se perdem atrás dele."
+        },
+        {
+          "tipo": "correcao",
+          "area": "Geral",
+          "titulo": "Alertas, rodapé e foco",
+          "texto": "Esc fecha o painel de alertas vazio, o medidor de contas do rodapé não rola mais para o lado e os campos dos Bots têm contorno de foco visível."
+        },
+        {
+          "tipo": "correcao",
+          "area": "Projetos",
+          "titulo": "Novo projeto",
+          "texto": "Depois de criar ou adicionar um projeto, ele passa a ser o workspace da janela que pediu."
+        }
+      ]
+    },
+    {
       "versao": "0.1.18",
       "data": "2026-11-19",
       "titulo": "Squads no Canvas, abas e esqueletos",
       "resumo": "As integrantes das Squads ganham cards próprios no Canvas, as abas dos terminais ficam mais fáceis de organizar e projetos novos começam a partir de mais modelos.",
       "itens": [
-        { "tipo": "novo", "area": "Canvas", "destaque": true, "titulo": "Cards de integrantes de Squad", "texto": "Arraste uma Squad para o Canvas e cada integrante aparece em um card com nome, função, CLI, modelo, estado e tarefa atual. Durante a abertura, o card mostra o progresso; em caso de falha, oferece nova tentativa no mesmo ponto." },
-        { "tipo": "novo", "area": "Canvas", "destaque": true, "titulo": "Prévia do terminal no card", "texto": "Enquanto a integrante trabalha, o card exibe as linhas mais recentes do terminal. Um clique abre o terminal completo da mesma sessão; voltar ao card libera a visualização." },
-        { "tipo": "novo", "area": "Projetos", "destaque": true, "titulo": "Mais esqueletos de projeto", "texto": "O catálogo de esqueletos ganhou modelos para landing pages, painéis administrativos e APIs. O orquestrador aplica o esqueleto localmente, sem sobrescrever arquivos." },
-        { "tipo": "melhoria", "area": "Terminais", "titulo": "Fechar as demais abas", "texto": "O menu da aba do terminal ganhou a ação para fechar todas as outras abas de uma vez." },
-        { "tipo": "melhoria", "area": "Conta", "titulo": "Assinatura e limites no painel de uso", "texto": "A situação da assinatura e os limites da conta aparecem junto do painel de uso, sem sair do aplicativo." },
-        { "tipo": "desempenho", "area": "Geral", "titulo": "Explorer, workspaces e troca de projeto mais rápidos", "texto": "Rodada de desempenho dedicada ao uso pesado: o Explorer, o painel de workspaces e a troca de projeto respondem mais rápido mesmo com muitos terminais abertos." },
-        { "tipo": "melhoria", "area": "Canvas", "titulo": "Configuração das integrantes", "texto": "O editor da integrante abre o modelo salvo e aplica a configuração na próxima abertura da Squad." }
+        {
+          "tipo": "novo",
+          "area": "Canvas",
+          "destaque": true,
+          "titulo": "Cards de integrantes de Squad",
+          "texto": "Arraste uma Squad para o Canvas e cada integrante aparece em um card com nome, função, CLI, modelo, estado e tarefa atual. Durante a abertura, o card mostra o progresso; em caso de falha, oferece nova tentativa no mesmo ponto."
+        },
+        {
+          "tipo": "novo",
+          "area": "Canvas",
+          "destaque": true,
+          "titulo": "Prévia do terminal no card",
+          "texto": "Enquanto a integrante trabalha, o card exibe as linhas mais recentes do terminal. Um clique abre o terminal completo da mesma sessão; voltar ao card libera a visualização."
+        },
+        {
+          "tipo": "novo",
+          "area": "Projetos",
+          "destaque": true,
+          "titulo": "Mais esqueletos de projeto",
+          "texto": "O catálogo de esqueletos ganhou modelos para landing pages, painéis administrativos e APIs. O orquestrador aplica o esqueleto localmente, sem sobrescrever arquivos."
+        },
+        {
+          "tipo": "melhoria",
+          "area": "Terminais",
+          "titulo": "Fechar as demais abas",
+          "texto": "O menu da aba do terminal ganhou a ação para fechar todas as outras abas de uma vez."
+        },
+        {
+          "tipo": "melhoria",
+          "area": "Conta",
+          "titulo": "Assinatura e limites no painel de uso",
+          "texto": "A situação da assinatura e os limites da conta aparecem junto do painel de uso, sem sair do aplicativo."
+        },
+        {
+          "tipo": "desempenho",
+          "area": "Geral",
+          "titulo": "Explorer, workspaces e troca de projeto mais rápidos",
+          "texto": "Rodada de desempenho dedicada ao uso pesado: o Explorer, o painel de workspaces e a troca de projeto respondem mais rápido mesmo com muitos terminais abertos."
+        },
+        {
+          "tipo": "melhoria",
+          "area": "Canvas",
+          "titulo": "Configuração das integrantes",
+          "texto": "O editor da integrante abre o modelo salvo e aplica a configuração na próxima abertura da Squad."
+        }
       ]
     },
     {
@@ -23,8 +152,19 @@
       "resumo": "Versão interna, publicada junto com a 0.1.18. Remove o limite de sessões por janela e amplia o que a grade e o Canvas conseguem restaurar.",
       "nota": "Esta versão foi distribuída junto com a 0.1.18.",
       "itens": [
-        { "tipo": "melhoria", "area": "Terminais", "destaque": true, "titulo": "Sem o limite de 16 terminais", "texto": "Abra quantas sessões o seu trabalho pedir na mesma janela; o limite fixo de 16 deixou de existir." },
-        { "tipo": "melhoria", "area": "Canvas", "titulo": "Mais de 64 terminais restaurados", "texto": "A grade e o Canvas salvam e restauram mais de 64 terminais no mesmo workspace." }
+        {
+          "tipo": "melhoria",
+          "area": "Terminais",
+          "destaque": true,
+          "titulo": "Sem o limite de 16 terminais",
+          "texto": "Abra quantas sessões o seu trabalho pedir na mesma janela; o limite fixo de 16 deixou de existir."
+        },
+        {
+          "tipo": "melhoria",
+          "area": "Canvas",
+          "titulo": "Mais de 64 terminais restaurados",
+          "texto": "A grade e o Canvas salvam e restauram mais de 64 terminais no mesmo workspace."
+        }
       ]
     },
     {
@@ -33,10 +173,32 @@
       "titulo": "Orquestrador mais direto",
       "resumo": "O orquestrador abre em um clique, suas configurações ficam em um só painel e alternar entre Canvas e grade ficou mais rápido.",
       "itens": [
-        { "tipo": "novo", "area": "Orquestração", "destaque": true, "titulo": "Abertura direta do orquestrador", "texto": "O orquestrador abre diretamente e reúne suas configurações em um painel com salvamento automático." },
-        { "tipo": "novo", "area": "Terminais", "destaque": true, "titulo": "Atalho entre Canvas e grade", "texto": "Um botão no cabeçalho alterna entre o Canvas e a grade de terminais sem perder as sessões." },
-        { "tipo": "melhoria", "area": "Terminais", "titulo": "Copiar o ID da sessão", "texto": "O menu do terminal ganhou a ação de copiar o ID nativo da sessão da CLI, útil para retomar a conversa fora do app." },
-        { "tipo": "correcao", "area": "Windows", "titulo": "Codex com instruções extensas", "texto": "Corrigida a abertura do Codex no Windows quando as instruções de orquestração eram muito longas." }
+        {
+          "tipo": "novo",
+          "area": "Orquestração",
+          "destaque": true,
+          "titulo": "Abertura direta do orquestrador",
+          "texto": "O orquestrador abre diretamente e reúne suas configurações em um painel com salvamento automático."
+        },
+        {
+          "tipo": "novo",
+          "area": "Terminais",
+          "destaque": true,
+          "titulo": "Atalho entre Canvas e grade",
+          "texto": "Um botão no cabeçalho alterna entre o Canvas e a grade de terminais sem perder as sessões."
+        },
+        {
+          "tipo": "melhoria",
+          "area": "Terminais",
+          "titulo": "Copiar o ID da sessão",
+          "texto": "O menu do terminal ganhou a ação de copiar o ID nativo da sessão da CLI, útil para retomar a conversa fora do app."
+        },
+        {
+          "tipo": "correcao",
+          "area": "Windows",
+          "titulo": "Codex com instruções extensas",
+          "texto": "Corrigida a abertura do Codex no Windows quando as instruções de orquestração eram muito longas."
+        }
       ]
     },
     {
@@ -45,15 +207,63 @@
       "titulo": "Squads, Canvas e navegador dos agentes",
       "resumo": "Equipes de terminais reutilizáveis, arquivos editáveis no Canvas e um navegador integrado que os agentes controlam enquanto você acompanha.",
       "itens": [
-        { "tipo": "tela", "area": "Squads", "destaque": true, "titulo": "Squads de terminais", "texto": "Monte equipes com integrantes persistentes, cada uma com sua CLI, modelo e nível de esforço. Abra a Squad inteira de uma vez e reutilize em outros projetos." },
-        { "tipo": "tela", "area": "Squads", "destaque": true, "titulo": "Marketplace de Squads", "texto": "Um catálogo local de Squads prontas para começar mais rápido, que você pode instalar e adaptar." },
-        { "tipo": "novo", "area": "Navegador", "destaque": true, "titulo": "Navegador controlado pelos agentes", "texto": "Os agentes navegam, clicam e preenchem páginas em um navegador integrado. Cada ação fica visível e você pode interromper a qualquer momento." },
-        { "tipo": "novo", "area": "Canvas", "titulo": "Arquivos editáveis e prévias HTML", "texto": "Abra arquivos no Canvas para editar ao lado dos terminais. Prévias HTML acompanham as mudanças que os agentes fazem." },
-        { "tipo": "novo", "area": "Canvas", "titulo": "Grupos de Squads conectados", "texto": "Organize as integrantes em grupos no Canvas e veja como elas se conectam." },
-        { "tipo": "novo", "area": "Orquestração", "titulo": "Resultados e instruções por terminal", "texto": "Os resultados das orquestrações ganharam aba própria, e cada terminal pode receber instruções específicas." },
-        { "tipo": "melhoria", "area": "Atualizações", "titulo": "Novo aviso de atualização", "texto": "Um aviso discreto no canto da tela mostra quando há versão nova, sem interromper o trabalho." },
-        { "tipo": "correcao", "area": "Terminais", "titulo": "Modelos, atividade e recuperação", "texto": "Correções na identificação dos modelos, no indicador de atividade dos agentes e na recuperação dos terminais sem repetir a saída." },
-        { "tipo": "desempenho", "area": "Canvas", "titulo": "Canvas sob demanda", "texto": "Partes do Canvas carregam só quando usadas, mantendo a abertura do app leve." }
+        {
+          "tipo": "tela",
+          "area": "Squads",
+          "destaque": true,
+          "titulo": "Squads de terminais",
+          "texto": "Monte equipes com integrantes persistentes, cada uma com sua CLI, modelo e nível de esforço. Abra a Squad inteira de uma vez e reutilize em outros projetos."
+        },
+        {
+          "tipo": "tela",
+          "area": "Squads",
+          "destaque": true,
+          "titulo": "Marketplace de Squads",
+          "texto": "Um catálogo local de Squads prontas para começar mais rápido, que você pode instalar e adaptar."
+        },
+        {
+          "tipo": "novo",
+          "area": "Navegador",
+          "destaque": true,
+          "titulo": "Navegador controlado pelos agentes",
+          "texto": "Os agentes navegam, clicam e preenchem páginas em um navegador integrado. Cada ação fica visível e você pode interromper a qualquer momento."
+        },
+        {
+          "tipo": "novo",
+          "area": "Canvas",
+          "titulo": "Arquivos editáveis e prévias HTML",
+          "texto": "Abra arquivos no Canvas para editar ao lado dos terminais. Prévias HTML acompanham as mudanças que os agentes fazem."
+        },
+        {
+          "tipo": "novo",
+          "area": "Canvas",
+          "titulo": "Grupos de Squads conectados",
+          "texto": "Organize as integrantes em grupos no Canvas e veja como elas se conectam."
+        },
+        {
+          "tipo": "novo",
+          "area": "Orquestração",
+          "titulo": "Resultados e instruções por terminal",
+          "texto": "Os resultados das orquestrações ganharam aba própria, e cada terminal pode receber instruções específicas."
+        },
+        {
+          "tipo": "melhoria",
+          "area": "Atualizações",
+          "titulo": "Novo aviso de atualização",
+          "texto": "Um aviso discreto no canto da tela mostra quando há versão nova, sem interromper o trabalho."
+        },
+        {
+          "tipo": "correcao",
+          "area": "Terminais",
+          "titulo": "Modelos, atividade e recuperação",
+          "texto": "Correções na identificação dos modelos, no indicador de atividade dos agentes e na recuperação dos terminais sem repetir a saída."
+        },
+        {
+          "tipo": "desempenho",
+          "area": "Canvas",
+          "titulo": "Canvas sob demanda",
+          "texto": "Partes do Canvas carregam só quando usadas, mantendo a abertura do app leve."
+        }
       ]
     },
     {
@@ -62,14 +272,57 @@
       "titulo": "Automações, conversa e preferências",
       "resumo": "Tarefas agendadas, um modo de conversa para os terminais e preferências reorganizadas com salvamento automático.",
       "itens": [
-        { "tipo": "tela", "area": "Automações", "destaque": true, "titulo": "Automações agendadas", "texto": "Programe tarefas para rodar nos terminais em horários definidos e consulte o histórico de cada execução." },
-        { "tipo": "novo", "area": "Terminais", "destaque": true, "titulo": "Modo de conversa", "texto": "Converse com o Claude e o Codex em uma interface de chat sobre o terminal, com anexos, ditado por voz e aprovações." },
-        { "tipo": "tela", "area": "Sistema", "destaque": true, "titulo": "Gerenciador de recursos e portas locais", "texto": "Veja o consumo de CPU e memória dos processos e as portas locais abertas pelos seus projetos, com ação para encerrar." },
-        { "tipo": "novo", "area": "Conta", "titulo": "Cotas das CLIs", "texto": "Consulte o quanto resta das cotas de uso das CLIs conectadas." },
-        { "tipo": "melhoria", "area": "Preferências", "titulo": "Preferências com salvamento automático", "texto": "As preferências ganharam índice lateral e salvam cada alteração na hora, sem botão de confirmar." },
-        { "tipo": "melhoria", "area": "Interface", "titulo": "Listagens padronizadas e tema claro revisado", "texto": "Listagens com busca e filtros no mesmo padrão em todo o app, e o tema claro com contraste revisado." },
-        { "tipo": "melhoria", "area": "Explorer", "titulo": "Explorer e ditado", "texto": "Melhorias de navegação no Explorer e na precisão do ditado." },
-        { "tipo": "seguranca", "area": "Privacidade", "titulo": "Métricas agregadas de uso", "texto": "A distribuição comercial passa a enviar métricas agregadas de uso vinculadas à conta. Nenhum conteúdo de arquivos, prompts ou terminais é enviado." }
+        {
+          "tipo": "tela",
+          "area": "Automações",
+          "destaque": true,
+          "titulo": "Automações agendadas",
+          "texto": "Programe tarefas para rodar nos terminais em horários definidos e consulte o histórico de cada execução."
+        },
+        {
+          "tipo": "novo",
+          "area": "Terminais",
+          "destaque": true,
+          "titulo": "Modo de conversa",
+          "texto": "Converse com o Claude e o Codex em uma interface de chat sobre o terminal, com anexos, ditado por voz e aprovações."
+        },
+        {
+          "tipo": "tela",
+          "area": "Sistema",
+          "destaque": true,
+          "titulo": "Gerenciador de recursos e portas locais",
+          "texto": "Veja o consumo de CPU e memória dos processos e as portas locais abertas pelos seus projetos, com ação para encerrar."
+        },
+        {
+          "tipo": "novo",
+          "area": "Conta",
+          "titulo": "Cotas das CLIs",
+          "texto": "Consulte o quanto resta das cotas de uso das CLIs conectadas."
+        },
+        {
+          "tipo": "melhoria",
+          "area": "Preferências",
+          "titulo": "Preferências com salvamento automático",
+          "texto": "As preferências ganharam índice lateral e salvam cada alteração na hora, sem botão de confirmar."
+        },
+        {
+          "tipo": "melhoria",
+          "area": "Interface",
+          "titulo": "Listagens padronizadas e tema claro revisado",
+          "texto": "Listagens com busca e filtros no mesmo padrão em todo o app, e o tema claro com contraste revisado."
+        },
+        {
+          "tipo": "melhoria",
+          "area": "Explorer",
+          "titulo": "Explorer e ditado",
+          "texto": "Melhorias de navegação no Explorer e na precisão do ditado."
+        },
+        {
+          "tipo": "seguranca",
+          "area": "Privacidade",
+          "titulo": "Métricas agregadas de uso",
+          "texto": "A distribuição comercial passa a enviar métricas agregadas de uso vinculadas à conta. Nenhum conteúdo de arquivos, prompts ou terminais é enviado."
+        }
       ]
     },
     {
@@ -78,9 +331,25 @@
       "titulo": "Copiar e colar nos terminais",
       "resumo": "Atalhos de copiar e colar corrigidos no Windows e no Linux, sem perder o Ctrl+C para interromper.",
       "itens": [
-        { "tipo": "correcao", "area": "Terminais", "destaque": true, "titulo": "Ctrl+C e Ctrl+V que funcionam como esperado", "texto": "Ctrl+V e Ctrl+Shift+V colam pelo tratamento do app. Ctrl+C copia quando há seleção e continua interrompendo quando não há. Ctrl+Shift+C sempre copia." },
-        { "tipo": "melhoria", "area": "Terminais", "titulo": "Colagem completa", "texto": "A colagem preserva o tratamento de texto, o anexo de imagem ou arquivo e a confirmação para conteúdo grande." },
-        { "tipo": "novo", "area": "Interface", "titulo": "Menu de contexto com Copiar e Colar", "texto": "Clique com o botão direito em campos editáveis e terminais para copiar e colar." }
+        {
+          "tipo": "correcao",
+          "area": "Terminais",
+          "destaque": true,
+          "titulo": "Ctrl+C e Ctrl+V que funcionam como esperado",
+          "texto": "Ctrl+V e Ctrl+Shift+V colam pelo tratamento do app. Ctrl+C copia quando há seleção e continua interrompendo quando não há. Ctrl+Shift+C sempre copia."
+        },
+        {
+          "tipo": "melhoria",
+          "area": "Terminais",
+          "titulo": "Colagem completa",
+          "texto": "A colagem preserva o tratamento de texto, o anexo de imagem ou arquivo e a confirmação para conteúdo grande."
+        },
+        {
+          "tipo": "novo",
+          "area": "Interface",
+          "titulo": "Menu de contexto com Copiar e Colar",
+          "texto": "Clique com o botão direito em campos editáveis e terminais para copiar e colar."
+        }
       ]
     },
     {
@@ -89,12 +358,44 @@
       "titulo": "Sessões, pontes e catálogo",
       "resumo": "Um novo menu de sessões, abas com nome e modelo, cartões de MCPs e workspaces e o catálogo de skills.",
       "itens": [
-        { "tipo": "novo", "area": "Terminais", "destaque": true, "titulo": "Novo menu de sessões", "texto": "Escolha o modo da sessão ao abrir um terminal. As abas mostram o nome e o modelo em uso." },
-        { "tipo": "tela", "area": "Catálogo", "destaque": true, "titulo": "Catálogo de skills e cartões de MCPs", "texto": "Navegue pelas skills disponíveis e veja MCPs e workspaces em cartões com as informações principais." },
-        { "tipo": "novo", "area": "Orquestração", "titulo": "Política em painel próprio", "texto": "A política de roteamento é editada em um painel dedicado, e os tipos de tarefa ganharam descrição para orientar a IA." },
-        { "tipo": "melhoria", "area": "Orquestração", "titulo": "Decisões de roteamento", "texto": "Integração de decisões corrigida, com diagnóstico de conexão e alternativa local quando o serviço não responde." },
-        { "tipo": "melhoria", "area": "Atualizações", "titulo": "Versão instalada no rodapé", "texto": "A versão instalada aparece no rodapé; um clique abre as atualizações." },
-        { "tipo": "melhoria", "area": "Interface", "titulo": "Telas pequenas", "texto": "Rolagem melhor em janelas menores e apresentação revisada das pontes de CLIs." }
+        {
+          "tipo": "novo",
+          "area": "Terminais",
+          "destaque": true,
+          "titulo": "Novo menu de sessões",
+          "texto": "Escolha o modo da sessão ao abrir um terminal. As abas mostram o nome e o modelo em uso."
+        },
+        {
+          "tipo": "tela",
+          "area": "Catálogo",
+          "destaque": true,
+          "titulo": "Catálogo de skills e cartões de MCPs",
+          "texto": "Navegue pelas skills disponíveis e veja MCPs e workspaces em cartões com as informações principais."
+        },
+        {
+          "tipo": "novo",
+          "area": "Orquestração",
+          "titulo": "Política em painel próprio",
+          "texto": "A política de roteamento é editada em um painel dedicado, e os tipos de tarefa ganharam descrição para orientar a IA."
+        },
+        {
+          "tipo": "melhoria",
+          "area": "Orquestração",
+          "titulo": "Decisões de roteamento",
+          "texto": "Integração de decisões corrigida, com diagnóstico de conexão e alternativa local quando o serviço não responde."
+        },
+        {
+          "tipo": "melhoria",
+          "area": "Atualizações",
+          "titulo": "Versão instalada no rodapé",
+          "texto": "A versão instalada aparece no rodapé; um clique abre as atualizações."
+        },
+        {
+          "tipo": "melhoria",
+          "area": "Interface",
+          "titulo": "Telas pequenas",
+          "texto": "Rolagem melhor em janelas menores e apresentação revisada das pontes de CLIs."
+        }
       ]
     },
     {
@@ -103,10 +404,32 @@
       "titulo": "SQLite no Explorer",
       "resumo": "Abra bancos SQLite direto do Explorer, crie arquivos e pastas na árvore e receba avisos de atualização a cada hora.",
       "itens": [
-        { "tipo": "tela", "area": "Explorer", "destaque": true, "titulo": "Visualizador SQLite", "texto": "Abra arquivos SQLite para ver tabelas, estrutura e dados paginados, em modo somente leitura." },
-        { "tipo": "novo", "area": "Explorer", "destaque": true, "titulo": "Criar e renomear na árvore", "texto": "Crie arquivos e pastas e renomeie itens diretamente na árvore do Explorer." },
-        { "tipo": "melhoria", "area": "Atualizações", "titulo": "Consulta a cada hora", "texto": "O app consulta atualizações a cada hora e avisa de forma discreta. Download e reinício acontecem só quando você clicar." },
-        { "tipo": "correcao", "area": "macOS", "titulo": "Sem aviso de compatibilidade", "texto": "O pacote para Mac Apple Silicon deixou de incluir binários Intel desnecessários, removendo o aviso do macOS." }
+        {
+          "tipo": "tela",
+          "area": "Explorer",
+          "destaque": true,
+          "titulo": "Visualizador SQLite",
+          "texto": "Abra arquivos SQLite para ver tabelas, estrutura e dados paginados, em modo somente leitura."
+        },
+        {
+          "tipo": "novo",
+          "area": "Explorer",
+          "destaque": true,
+          "titulo": "Criar e renomear na árvore",
+          "texto": "Crie arquivos e pastas e renomeie itens diretamente na árvore do Explorer."
+        },
+        {
+          "tipo": "melhoria",
+          "area": "Atualizações",
+          "titulo": "Consulta a cada hora",
+          "texto": "O app consulta atualizações a cada hora e avisa de forma discreta. Download e reinício acontecem só quando você clicar."
+        },
+        {
+          "tipo": "correcao",
+          "area": "macOS",
+          "titulo": "Sem aviso de compatibilidade",
+          "texto": "O pacote para Mac Apple Silicon deixou de incluir binários Intel desnecessários, removendo o aviso do macOS."
+        }
       ]
     },
     {
@@ -115,10 +438,32 @@
       "titulo": "Editor de arquivos",
       "resumo": "Um editor completo dentro do app e instaladores para Mac Intel.",
       "itens": [
-        { "tipo": "tela", "area": "Editor", "destaque": true, "titulo": "Editor Monaco", "texto": "Edite arquivos com realce de sintaxe, busca, salvamento automático e comparação quando o arquivo muda no disco." },
-        { "tipo": "novo", "area": "Editor", "destaque": true, "titulo": "Prévia de Markdown", "texto": "Veja o Markdown renderizado ao lado do texto. Rascunhos são preservados ao alternar entre abas." },
-        { "tipo": "novo", "area": "Explorer", "titulo": "Renomear e editar arquivos de ambiente", "texto": "Renomeie arquivos pelo Explorer e edite manualmente os arquivos de ambiente do próprio projeto. Agentes continuam sem acesso a eles." },
-        { "tipo": "novo", "area": "Instalação", "titulo": "Mac Intel", "texto": "Instaladores para Mac Apple Silicon, Mac Intel (universal) e Windows x64." }
+        {
+          "tipo": "tela",
+          "area": "Editor",
+          "destaque": true,
+          "titulo": "Editor Monaco",
+          "texto": "Edite arquivos com realce de sintaxe, busca, salvamento automático e comparação quando o arquivo muda no disco."
+        },
+        {
+          "tipo": "novo",
+          "area": "Editor",
+          "destaque": true,
+          "titulo": "Prévia de Markdown",
+          "texto": "Veja o Markdown renderizado ao lado do texto. Rascunhos são preservados ao alternar entre abas."
+        },
+        {
+          "tipo": "novo",
+          "area": "Explorer",
+          "titulo": "Renomear e editar arquivos de ambiente",
+          "texto": "Renomeie arquivos pelo Explorer e edite manualmente os arquivos de ambiente do próprio projeto. Agentes continuam sem acesso a eles."
+        },
+        {
+          "tipo": "novo",
+          "area": "Instalação",
+          "titulo": "Mac Intel",
+          "texto": "Instaladores para Mac Apple Silicon, Mac Intel (universal) e Windows x64."
+        }
       ]
     },
     {
@@ -127,8 +472,19 @@
       "titulo": "Painéis de processos e conta",
       "resumo": "Painéis de processos que aparecem só quando há o que mostrar e correções na gestão da assinatura.",
       "itens": [
-        { "tipo": "melhoria", "area": "Processos", "destaque": true, "titulo": "Painéis só com saída real", "texto": "Processos auxiliares silenciosos não abrem painéis vazios. O painel aparece quando há saída e fecha sozinho quando o processo termina." },
-        { "tipo": "correcao", "area": "Conta", "titulo": "Assinaturas", "texto": "Espera de ativação sem nova cobrança, cancelamento após estorno integral e retomada após inadimplência." }
+        {
+          "tipo": "melhoria",
+          "area": "Processos",
+          "destaque": true,
+          "titulo": "Painéis só com saída real",
+          "texto": "Processos auxiliares silenciosos não abrem painéis vazios. O painel aparece quando há saída e fecha sozinho quando o processo termina."
+        },
+        {
+          "tipo": "correcao",
+          "area": "Conta",
+          "titulo": "Assinaturas",
+          "texto": "Espera de ativação sem nova cobrança, cancelamento após estorno integral e retomada após inadimplência."
+        }
       ]
     },
     {
@@ -137,9 +493,26 @@
       "titulo": "Canvas de terminais",
       "resumo": "Um espaço livre para organizar terminais e uma orquestração autônoma mais refinada.",
       "itens": [
-        { "tipo": "tela", "area": "Canvas", "destaque": true, "titulo": "Canvas de terminais", "texto": "Organize, mova e redimensione os painéis livremente, com zoom e prévia de cada terminal." },
-        { "tipo": "novo", "area": "Orquestração", "destaque": true, "titulo": "Orquestração autônoma", "texto": "Perguntas dos workers são encaminhadas ao orquestrador, que decide e segue o trabalho. Projetos novos podem começar de esqueletos locais." },
-        { "tipo": "melhoria", "area": "Terminais", "titulo": "Pontes, captura e custos", "texto": "Melhorias nas pontes de CLIs, na captura de tela, no acompanhamento de custos e no encerramento de processos." }
+        {
+          "tipo": "tela",
+          "area": "Canvas",
+          "destaque": true,
+          "titulo": "Canvas de terminais",
+          "texto": "Organize, mova e redimensione os painéis livremente, com zoom e prévia de cada terminal."
+        },
+        {
+          "tipo": "novo",
+          "area": "Orquestração",
+          "destaque": true,
+          "titulo": "Orquestração autônoma",
+          "texto": "Perguntas dos workers são encaminhadas ao orquestrador, que decide e segue o trabalho. Projetos novos podem começar de esqueletos locais."
+        },
+        {
+          "tipo": "melhoria",
+          "area": "Terminais",
+          "titulo": "Pontes, captura e custos",
+          "texto": "Melhorias nas pontes de CLIs, na captura de tela, no acompanhamento de custos e no encerramento de processos."
+        }
       ]
     },
     {
@@ -148,9 +521,26 @@
       "titulo": "Navegador interno",
       "resumo": "Links dos terminais abrem onde você preferir, e um navegador interno isolado chega ao app.",
       "itens": [
-        { "tipo": "tela", "area": "Navegador", "destaque": true, "titulo": "Navegador interno", "texto": "Um navegador isolado do aplicativo, com barra de endereço, histórico, recarga e abas." },
-        { "tipo": "novo", "area": "Terminais", "destaque": true, "titulo": "Escolha onde abrir links", "texto": "Ao clicar em um link no terminal, escolha entre uma aba do navegador interno e o navegador do sistema." },
-        { "tipo": "correcao", "area": "Orquestração", "titulo": "Delegação mais confiável", "texto": "Correções no envio e no retorno de tarefas dos workers, na retomada da espera por entregas e na aplicação das políticas de aprovação." }
+        {
+          "tipo": "tela",
+          "area": "Navegador",
+          "destaque": true,
+          "titulo": "Navegador interno",
+          "texto": "Um navegador isolado do aplicativo, com barra de endereço, histórico, recarga e abas."
+        },
+        {
+          "tipo": "novo",
+          "area": "Terminais",
+          "destaque": true,
+          "titulo": "Escolha onde abrir links",
+          "texto": "Ao clicar em um link no terminal, escolha entre uma aba do navegador interno e o navegador do sistema."
+        },
+        {
+          "tipo": "correcao",
+          "area": "Orquestração",
+          "titulo": "Delegação mais confiável",
+          "texto": "Correções no envio e no retorno de tarefas dos workers, na retomada da espera por entregas e na aplicação das políticas de aprovação."
+        }
       ]
     },
     {
@@ -159,12 +549,44 @@
       "titulo": "Orquestrador, agentes e entregas verificadas",
       "resumo": "O orquestrador passa a trabalhar com briefing estruturado, papéis e dependências, e as entregas chegam verificadas.",
       "itens": [
-        { "tipo": "novo", "area": "Orquestração", "destaque": true, "titulo": "Briefing estruturado", "texto": "O orquestrador distribui o trabalho com briefing, roteamento por papel, dependências entre workers e espera por eventos." },
-        { "tipo": "tela", "area": "Agentes", "destaque": true, "titulo": "Aba Agentes e bandeja de aprovações", "texto": "Acompanhe todos os agentes em uma aba própria, veja resultados consolidados e responda aprovações em uma bandeja única." },
-        { "tipo": "novo", "area": "Orquestração", "titulo": "Entregas verificadas", "texto": "Cada entrega declara como foi verificada, passa por revisão posterior e respeita o escopo de arquivos combinado." },
-        { "tipo": "novo", "area": "Interface", "titulo": "Captura de interfaces", "texto": "Capture telas locais em três larguras, com isolamento e bloqueio de rede externa." },
-        { "tipo": "melhoria", "area": "Conta", "titulo": "Licença mais resiliente", "texto": "A licença é consultada a cada hora, com margem para oscilações de rede e recuperação ao reconectar." },
-        { "tipo": "seguranca", "area": "Atualizações", "titulo": "Atualizações assinadas", "texto": "Windows e Mac usam manifestos de atualização assinados e arquivos conferidos por hash. Tudo depende do seu consentimento e clique." }
+        {
+          "tipo": "novo",
+          "area": "Orquestração",
+          "destaque": true,
+          "titulo": "Briefing estruturado",
+          "texto": "O orquestrador distribui o trabalho com briefing, roteamento por papel, dependências entre workers e espera por eventos."
+        },
+        {
+          "tipo": "tela",
+          "area": "Agentes",
+          "destaque": true,
+          "titulo": "Aba Agentes e bandeja de aprovações",
+          "texto": "Acompanhe todos os agentes em uma aba própria, veja resultados consolidados e responda aprovações em uma bandeja única."
+        },
+        {
+          "tipo": "novo",
+          "area": "Orquestração",
+          "titulo": "Entregas verificadas",
+          "texto": "Cada entrega declara como foi verificada, passa por revisão posterior e respeita o escopo de arquivos combinado."
+        },
+        {
+          "tipo": "novo",
+          "area": "Interface",
+          "titulo": "Captura de interfaces",
+          "texto": "Capture telas locais em três larguras, com isolamento e bloqueio de rede externa."
+        },
+        {
+          "tipo": "melhoria",
+          "area": "Conta",
+          "titulo": "Licença mais resiliente",
+          "texto": "A licença é consultada a cada hora, com margem para oscilações de rede e recuperação ao reconectar."
+        },
+        {
+          "tipo": "seguranca",
+          "area": "Atualizações",
+          "titulo": "Atualizações assinadas",
+          "texto": "Windows e Mac usam manifestos de atualização assinados e arquivos conferidos por hash. Tudo depende do seu consentimento e clique."
+        }
       ]
     },
     {
@@ -173,10 +595,32 @@
       "titulo": "Acompanhamento de processos",
       "resumo": "Veja os processos que as CLIs abrem e procure atualizações direto da barra lateral.",
       "itens": [
-        { "tipo": "novo", "area": "Processos", "destaque": true, "titulo": "Processos das CLIs ao lado do agente", "texto": "Processos filhos de todas as CLIs aparecem no mesmo projeto, com comando, PID e estado reais, em um painel somente leitura." },
-        { "tipo": "novo", "area": "Atualizações", "destaque": true, "titulo": "Procurar atualização na barra lateral", "texto": "A versão instalada e o botão de procurar atualização ficam na parte inferior da barra lateral." },
-        { "tipo": "melhoria", "area": "Orquestração", "titulo": "Kimi e MiniMax Code com política de aprovação", "texto": "As duas CLIs recebem e aplicam a política de aprovação do projeto; dúvidas restantes vão ao orquestrador no modo Autônomo." },
-        { "tipo": "seguranca", "area": "MCP", "titulo": "Autorização por ferramenta", "texto": "Ferramentas internas conservam autorização por ferramenta e por painel, mesmo quando comandos e arquivos exigem aprovação." }
+        {
+          "tipo": "novo",
+          "area": "Processos",
+          "destaque": true,
+          "titulo": "Processos das CLIs ao lado do agente",
+          "texto": "Processos filhos de todas as CLIs aparecem no mesmo projeto, com comando, PID e estado reais, em um painel somente leitura."
+        },
+        {
+          "tipo": "novo",
+          "area": "Atualizações",
+          "destaque": true,
+          "titulo": "Procurar atualização na barra lateral",
+          "texto": "A versão instalada e o botão de procurar atualização ficam na parte inferior da barra lateral."
+        },
+        {
+          "tipo": "melhoria",
+          "area": "Orquestração",
+          "titulo": "Kimi e MiniMax Code com política de aprovação",
+          "texto": "As duas CLIs recebem e aplicam a política de aprovação do projeto; dúvidas restantes vão ao orquestrador no modo Autônomo."
+        },
+        {
+          "tipo": "seguranca",
+          "area": "MCP",
+          "titulo": "Autorização por ferramenta",
+          "texto": "Ferramentas internas conservam autorização por ferramenta e por painel, mesmo quando comandos e arquivos exigem aprovação."
+        }
       ]
     },
     {
@@ -185,10 +629,31 @@
       "titulo": "Correções nos terminais e scouts",
       "resumo": "Contadores, agrupamento e recuperação de agentes mais precisos.",
       "itens": [
-        { "tipo": "correcao", "area": "Workspaces", "destaque": true, "titulo": "Contador de agentes correto", "texto": "Agentes encerrados deixam de contar no workspace, e sessões sem projeto não são atribuídas ao projeto selecionado." },
-        { "tipo": "correcao", "area": "Orquestração", "titulo": "Scouts e workers junto ao orquestrador", "texto": "Eles aparecem ao lado do orquestrador mesmo depois de falhas na recuperação de sessões antigas." },
-        { "tipo": "melhoria", "area": "Workspaces", "titulo": "Abrir o painel do agente", "texto": "Clicar em um agente do workspace sincroniza e abre o painel dele." },
-        { "tipo": "correcao", "area": "Terminais", "titulo": "Menos avisos falsos", "texto": "O aviso recorrente de indisponibilidade do serviço de terminais foi removido, e o orquestrador responde ao menu de confiança do Codex em projetos confiáveis." }
+        {
+          "tipo": "correcao",
+          "area": "Workspaces",
+          "destaque": true,
+          "titulo": "Contador de agentes correto",
+          "texto": "Agentes encerrados deixam de contar no workspace, e sessões sem projeto não são atribuídas ao projeto selecionado."
+        },
+        {
+          "tipo": "correcao",
+          "area": "Orquestração",
+          "titulo": "Scouts e workers junto ao orquestrador",
+          "texto": "Eles aparecem ao lado do orquestrador mesmo depois de falhas na recuperação de sessões antigas."
+        },
+        {
+          "tipo": "melhoria",
+          "area": "Workspaces",
+          "titulo": "Abrir o painel do agente",
+          "texto": "Clicar em um agente do workspace sincroniza e abre o painel dele."
+        },
+        {
+          "tipo": "correcao",
+          "area": "Terminais",
+          "titulo": "Menos avisos falsos",
+          "texto": "O aviso recorrente de indisponibilidade do serviço de terminais foi removido, e o orquestrador responde ao menu de confiança do Codex em projetos confiáveis."
+        }
       ]
     },
     {
@@ -197,8 +662,19 @@
       "titulo": "Novo login e cadastro",
       "resumo": "Entrar e criar conta ficou mais simples, com a identidade azul do produto.",
       "itens": [
-        { "tipo": "tela", "area": "Conta", "destaque": true, "titulo": "Login e cadastro redesenhados", "texto": "Nova apresentação com confirmação de e-mail, validação da assinatura, opção de mostrar a senha e recuperação de falhas de conexão." },
-        { "tipo": "melhoria", "area": "Interface", "titulo": "Temas e janelas menores", "texto": "Telas de acesso nos temas claro e escuro, ajustadas para janelas menores." }
+        {
+          "tipo": "tela",
+          "area": "Conta",
+          "destaque": true,
+          "titulo": "Login e cadastro redesenhados",
+          "texto": "Nova apresentação com confirmação de e-mail, validação da assinatura, opção de mostrar a senha e recuperação de falhas de conexão."
+        },
+        {
+          "tipo": "melhoria",
+          "area": "Interface",
+          "titulo": "Temas e janelas menores",
+          "texto": "Telas de acesso nos temas claro e escuro, ajustadas para janelas menores."
+        }
       ]
     },
     {
@@ -207,9 +683,25 @@
       "titulo": "Primeira distribuição",
       "resumo": "A primeira prévia pública para macOS Apple Silicon, assinada e notarizada pela Apple.",
       "itens": [
-        { "tipo": "novo", "area": "Instalação", "destaque": true, "titulo": "Instalador para Mac Apple Silicon", "texto": "DMG e ZIP assinados com Developer ID e notarizados pela Apple. O download não exige cadastro." },
-        { "tipo": "novo", "area": "Conta", "titulo": "Conta e assinatura no app", "texto": "Crie sua conta ou entre direto no aplicativo. O uso exige assinatura ativa." },
-        { "tipo": "seguranca", "area": "Instalação", "titulo": "Arquivos conferíveis", "texto": "Cada release traz os hashes SHA-256 dos arquivos publicados." }
+        {
+          "tipo": "novo",
+          "area": "Instalação",
+          "destaque": true,
+          "titulo": "Instalador para Mac Apple Silicon",
+          "texto": "DMG e ZIP assinados com Developer ID e notarizados pela Apple. O download não exige cadastro."
+        },
+        {
+          "tipo": "novo",
+          "area": "Conta",
+          "titulo": "Conta e assinatura no app",
+          "texto": "Crie sua conta ou entre direto no aplicativo. O uso exige assinatura ativa."
+        },
+        {
+          "tipo": "seguranca",
+          "area": "Instalação",
+          "titulo": "Arquivos conferíveis",
+          "texto": "Cada release traz os hashes SHA-256 dos arquivos publicados."
+        }
       ]
     },
     {
@@ -219,11 +711,39 @@
       "resumo": "Antes da primeira distribuição: a base do ambiente de desenvolvimento com agentes de IA.",
       "nota": "Versões de desenvolvimento, sem instalador público.",
       "itens": [
-        { "tipo": "novo", "area": "Terminais", "destaque": true, "titulo": "Terminais reais das CLIs de IA", "texto": "Claude Code, Codex, Gemini, OpenCode e outras CLIs rodam em terminais reais, lado a lado, na mesma janela." },
-        { "tipo": "novo", "area": "Terminais", "destaque": true, "titulo": "Sessões que sobrevivem ao app", "texto": "Os terminais rodam em um serviço próprio: feche o aplicativo e o trabalho continua de onde parou ao reabrir." },
-        { "tipo": "novo", "area": "Orquestração", "destaque": true, "titulo": "Orquestrador e workers", "texto": "Um orquestrador distribui tarefas para workers em outros terminais por MCP, com token próprio para cada painel." },
-        { "tipo": "seguranca", "area": "Segurança", "titulo": "Seguro por padrão", "texto": "As CLIs abrem com aprovações normais; o modo automático depende de escolha explícita do workspace. Arquivos de segredo nunca são lidos pelos agentes." },
-        { "tipo": "novo", "area": "Interface", "titulo": "Temas claro e escuro", "texto": "Interface em português, com tema claro e escuro e área de trabalho dos terminais maximizada." }
+        {
+          "tipo": "novo",
+          "area": "Terminais",
+          "destaque": true,
+          "titulo": "Terminais reais das CLIs de IA",
+          "texto": "Claude Code, Codex, Gemini, OpenCode e outras CLIs rodam em terminais reais, lado a lado, na mesma janela."
+        },
+        {
+          "tipo": "novo",
+          "area": "Terminais",
+          "destaque": true,
+          "titulo": "Sessões que sobrevivem ao app",
+          "texto": "Os terminais rodam em um serviço próprio: feche o aplicativo e o trabalho continua de onde parou ao reabrir."
+        },
+        {
+          "tipo": "novo",
+          "area": "Orquestração",
+          "destaque": true,
+          "titulo": "Orquestrador e workers",
+          "texto": "Um orquestrador distribui tarefas para workers em outros terminais por MCP, com token próprio para cada painel."
+        },
+        {
+          "tipo": "seguranca",
+          "area": "Segurança",
+          "titulo": "Seguro por padrão",
+          "texto": "As CLIs abrem com aprovações normais; o modo automático depende de escolha explícita do workspace. Arquivos de segredo nunca são lidos pelos agentes."
+        },
+        {
+          "tipo": "novo",
+          "area": "Interface",
+          "titulo": "Temas claro e escuro",
+          "texto": "Interface em português, com tema claro e escuro e área de trabalho dos terminais maximizada."
+        }
       ]
     }
   ]
