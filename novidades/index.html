@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Novidades do Pylot.One</title>
-  <meta name="description" content="Tudo o que mudou no Pylot.One, versão a versão: telas novas, melhorias, correções e segurança. Versão mais recente: 0.1.19.">
+  <meta name="description" content="Tudo o que mudou no Pylot.One, versão a versão: telas novas, melhorias, correções e segurança. Versão mais recente: 0.1.20.">
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#2563eb">
   <meta property="og:title" content="Novidades do Pylot.One">
-  <meta property="og:description" content="Versão 0.1.19: Bots, computador dos bots e modo Off.">
+  <meta property="og:description" content="Versão 0.1.20: Bots com Claude no Windows.">
   <link rel="icon" href="simbolo.svg" type="image/svg+xml">
   <link rel="preload" href="fontes/chakra-700.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="estilo.css">
   <script>try{var t=localStorage.getItem("nv-tema");if(t==="claro"||t==="escuro")document.documentElement.dataset.tema=t;}catch(e){}</script>
 </head>
-<body data-ultima="0.1.19">
+<body data-ultima="0.1.20">
   <a class="nv-pular" href="#conteudo">Pular para as versões</a>
   <header class="nv-topo">
     <div class="nv-topo-dentro">
@@ -41,15 +41,15 @@
         <h1 id="nv-heroi-titulo">Tudo o que mudou,<br><span>versão a versão.</span></h1>
         <p class="nv-heroi-texto">Telas novas, melhorias, correções e segurança: o registro completo da evolução do Pylot.One, da fundação até hoje.</p>
         <dl class="nv-numeros">
-          <div><dt>versões</dt><dd>19</dd></div>
-          <div><dt>mudanças registradas</dt><dd>92</dd></div>
+          <div><dt>versões</dt><dd>20</dd></div>
+          <div><dt>mudanças registradas</dt><dd>95</dd></div>
           <div><dt>telas novas</dt><dd>12</dd></div>
         </dl>
-        <a class="nv-cartao-ultima" href="#v0.1.19">
+        <a class="nv-cartao-ultima" href="#v0.1.20">
           <span class="nv-cartao-rotulo">Mais recente</span>
-          <span class="nv-cartao-versao">v0.1.19</span>
-          <span class="nv-cartao-titulo">Bots, computador dos bots e modo Off</span>
-          <span class="nv-cartao-data">22 de novembro de 2026</span>
+          <span class="nv-cartao-versao">v0.1.20</span>
+          <span class="nv-cartao-titulo">Bots com Claude no Windows</span>
+          <span class="nv-cartao-data">23 de novembro de 2026</span>
           <span class="nv-cartao-seta" aria-hidden="true">→</span>
         </a>
       </div>
@@ -88,6 +88,7 @@
       <aside class="nv-indice" aria-label="Versões">
         <p class="nv-indice-rotulo">Versões</p>
         <ol>
+            <li><a href="#v0.1.20" data-alvo="v0.1.20"><span class="nv-indice-versao">v0.1.20</span><span class="nv-indice-titulo">Bots com Claude no Windows</span></a></li>
             <li><a href="#v0.1.19" data-alvo="v0.1.19"><span class="nv-indice-versao">v0.1.19</span><span class="nv-indice-titulo">Bots, computador dos bots e modo Off</span></a></li>
             <li><a href="#v0.1.18" data-alvo="v0.1.18"><span class="nv-indice-versao">v0.1.18</span><span class="nv-indice-titulo">Squads no Canvas, abas e esqueletos</span></a></li>
             <li><a href="#v0.1.17" data-alvo="v0.1.17"><span class="nv-indice-versao">v0.1.17</span><span class="nv-indice-titulo">Terminais sem teto por janela</span></a></li>
@@ -110,12 +111,50 @@
         </ol>
       </aside>
       <div class="nv-linha">
+      <section class="nv-versao" id="v0.1.20" data-versao="0.1.20" aria-labelledby="v0.1.20-titulo">
+        <div class="nv-marco" aria-hidden="true"><span></span></div>
+        <header class="nv-versao-cabecalho">
+          <div class="nv-versao-meta">
+            <a class="nv-numero" href="#v0.1.20">v0.1.20</a>
+            <span class="nv-etiqueta nv-etiqueta-ultima">Mais recente</span>
+            <span class="nv-etiqueta nv-etiqueta-instalada" hidden>Sua versão</span>
+            <time datetime="2026-11-23">23 de novembro de 2026</time>
+          </div>
+          <h2 id="v0.1.20-titulo">Bots com Claude no Windows</h2>
+          <p class="nv-resumo">Correção para quem usa o Claude no Windows: os bots voltam a responder e o terminal avisa quando não consegue iniciar.</p>
+          
+          <p class="nv-contagem">1 melhoria · 2 correções</p>
+        </header>
+        <div class="nv-destaques">
+          <article class="nv-destaque" data-tipo="correcao">
+            <div class="nv-destaque-topo"><span class="nv-selo" data-tipo="correcao">Correção</span><span class="nv-area">Bots</span></div>
+            <h4>Bots com Claude voltam a responder no Windows</h4>
+            <p>Com o Claude instalado pelo npm no Windows, o terminal do bot abria preto e o bot ficava trabalhando sem responder. Agora o Claude abre normalmente e o bot responde.</p>
+          </article>
+        </div>
+        <ul class="nv-itens">
+          <li class="nv-item" data-tipo="correcao">
+            <span class="nv-selo" data-tipo="correcao">Correção</span>
+            <div class="nv-item-corpo">
+              <h4>Claude abre com preferências, Squads e pedidos longos no Windows <span class="nv-area">Terminais</span></h4>
+              <p>Preferências gravadas, agentes de Squad e painéis abertos com um pedido de várias linhas não impedem mais o Claude de iniciar no Windows.</p>
+            </div>
+          </li>
+          <li class="nv-item" data-tipo="melhoria">
+            <span class="nv-selo" data-tipo="melhoria">Melhoria</span>
+            <div class="nv-item-corpo">
+              <h4>Terminal avisa quando não consegue iniciar <span class="nv-area">Terminais</span></h4>
+              <p>Se um terminal não conseguir iniciar, ele mostra o motivo e encerra, em vez de ficar com a tela preta.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
       <section class="nv-versao" id="v0.1.19" data-versao="0.1.19" aria-labelledby="v0.1.19-titulo">
         <div class="nv-marco" aria-hidden="true"><span></span></div>
         <header class="nv-versao-cabecalho">
           <div class="nv-versao-meta">
             <a class="nv-numero" href="#v0.1.19">v0.1.19</a>
-            <span class="nv-etiqueta nv-etiqueta-ultima">Mais recente</span>
+            
             <span class="nv-etiqueta nv-etiqueta-instalada" hidden>Sua versão</span>
             <time datetime="2026-11-22">22 de novembro de 2026</time>
           </div>
