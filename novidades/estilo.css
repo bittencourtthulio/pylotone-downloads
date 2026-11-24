@@ -176,6 +176,14 @@ p { margin: 0; }
 .nv-nota { margin-top: 10px; font-size: 14px; color: var(--texto-3); font-style: italic; }
 .nv-contagem { margin-top: 12px; font-size: 13px; color: var(--texto-3); font-family: var(--fonte-mono); }
 
+/* D-1093: vídeo da versão, entre o cabeçalho e os destaques */
+.nv-video { margin: 0; background: var(--superficie); border: 1px solid var(--borda); border-top: 0; border-bottom: 0; padding: 4px 28px 22px; }
+.nv-video:last-child { border-radius: 0 0 18px 18px; border-bottom: 1px solid var(--borda); }
+.nv-video video { display: block; width: 100%; aspect-ratio: 16 / 9; height: auto; border-radius: 14px; background: #0a0c11; border: 1px solid var(--borda); }
+.nv-video figcaption { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 10px; margin-top: 10px; font-size: 14px; color: var(--texto-2); }
+.nv-video-rotulo { font-size: 12px; font-weight: 600; color: var(--destaque); background: var(--destaque-suave); padding: 2px 9px; border-radius: 999px; }
+.nv-video-duracao { margin-left: auto; font-family: var(--fonte-mono); font-size: 12.5px; color: var(--texto-3); }
+
 .nv-destaques, .nv-itens { background: var(--superficie); border: 1px solid var(--borda); border-top: 0; }
 .nv-destaques { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; padding: 4px 28px 22px; }
 .nv-destaques:last-child { border-radius: 0 0 18px 18px; }
@@ -226,6 +234,7 @@ mark { background: color-mix(in srgb, var(--destaque-2) 35%, transparent); color
   .nv-marco { display: none; }
   .nv-vazio { margin-left: 0; }
   .nv-versao-cabecalho { padding: 20px 18px 14px; }
+  .nv-video { padding: 4px 18px 18px; }
   .nv-destaques { padding: 4px 18px 18px; grid-template-columns: 1fr; }
   .nv-itens { padding: 4px 18px 10px; }
   .nv-item { grid-template-columns: 1fr; gap: 8px; }

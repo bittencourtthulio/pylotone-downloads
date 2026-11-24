@@ -2,6 +2,66 @@
   "esquema": 1,
   "versoes": [
     {
+      "versao": "0.1.21",
+      "data": "2026-11-24",
+      "titulo": "Bots que trabalham sozinhos",
+      "resumo": "Os bots respondem mais rápido, seguem o pedido até o fim sem travar em telas de confirmação, usam o modelo que você escolher e avisam quando precisam de você.",
+      "itens": [
+        {
+          "tipo": "novo",
+          "area": "Bots",
+          "destaque": true,
+          "titulo": "Bot trabalha do começo ao fim sozinho",
+          "texto": "Enquanto atende um pedido, o bot e os agentes dele não ficam mais parados em \"confiar nesta pasta\" ou em pedidos de permissão: o app responde só desta vez, sem nunca escolher \"sempre\". Comandos bloqueados continuam bloqueados."
+        },
+        {
+          "tipo": "novo",
+          "area": "Bots",
+          "destaque": true,
+          "titulo": "Aviso quando o bot precisa de você",
+          "texto": "Se um terminal do bot parar numa pergunta que o app não sabe responder, numa conta desconectada ou no limite de uso, aparece um cartão com o trecho da tela e o botão Abrir terminal, além de notificação e aviso no Telegram do pedido. Conta desconectada ou limite encerram o pedido com o motivo."
+        },
+        {
+          "tipo": "desempenho",
+          "area": "Bots",
+          "destaque": true,
+          "titulo": "Primeira resposta muito mais rápida",
+          "texto": "Uma conversa simples com o bot não abre agentes nem lê o projeto inteiro: a resposta chega em segundos, em vez de mais de um minuto."
+        },
+        {
+          "tipo": "novo",
+          "area": "Bots",
+          "titulo": "Escolha o modelo do bot",
+          "texto": "Em Ajustes do bot, o campo Modelo lista os modelos que a sua CLI oferece de verdade, e o Esforço aparece quando o modelo tem níveis."
+        },
+        {
+          "tipo": "melhoria",
+          "area": "Bots",
+          "titulo": "Andamento do pedido na conversa",
+          "texto": "A conversa mostra há quanto tempo o bot está no pedido e quantos agentes ele abriu, e o Telegram mostra \"digitando…\" enquanto ele trabalha."
+        },
+        {
+          "tipo": "melhoria",
+          "area": "Conta",
+          "titulo": "Até dois computadores ao mesmo tempo",
+          "texto": "A mesma conta fica ativa em dois computadores. Entrar num terceiro encerra a sessão mais antiga."
+        },
+        {
+          "tipo": "melhoria",
+          "area": "Novidades",
+          "titulo": "Vídeo do que mudou",
+          "texto": "A página de novidades passa a trazer um vídeo narrado de cada versão, com legendas."
+        }
+      ],
+      "video": {
+        "arquivo": "videos/v0.1.21.mp4",
+        "capa": "videos/v0.1.21.jpg",
+        "legendas": "videos/v0.1.21.vtt",
+        "titulo": "Tour da 0.1.21: bots que trabalham sozinhos",
+        "duracao": "1:34"
+      }
+    },
+    {
       "versao": "0.1.20",
       "data": "2026-11-23",
       "titulo": "Bots com Claude no Windows",
