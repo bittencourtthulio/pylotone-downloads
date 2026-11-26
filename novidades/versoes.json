@@ -2,6 +2,90 @@
   "esquema": 1,
   "versoes": [
     {
+      "versao": "0.1.22",
+      "data": "2026-11-26",
+      "titulo": "Bots que não deixam pedido pela metade",
+      "resumo": "A página do computador do bot volta a aparecer, nenhum pedido fica preso esperando resposta, o que você muda no bot vale já no próximo pedido e as respostas chegam inteiras em cada canal.",
+      "itens": [
+        {
+          "tipo": "correcao",
+          "area": "Computador dos bots",
+          "destaque": true,
+          "titulo": "A página do navegador do bot volta a aparecer",
+          "texto": "Com o computador aberto ao lado da conversa, o navegador mostrava o endereço e o título da aba, mas a área da página ficava vazia. Agora a página aparece inteira, em qualquer largura."
+        },
+        {
+          "tipo": "correcao",
+          "area": "Bots",
+          "destaque": true,
+          "titulo": "Nenhum pedido fica preso",
+          "texto": "Se o bot termina sem responder, o app manda um lembrete; se ele continuar calado, o pedido fecha com o motivo \"o bot parou sem responder\" e o próximo da fila segue."
+        },
+        {
+          "tipo": "melhoria",
+          "area": "Bots",
+          "destaque": true,
+          "titulo": "O que você muda vale no próximo pedido",
+          "texto": "Trocar a personalidade, as skills, a CLI, o modelo ou o esforço do bot passa a valer já no pedido seguinte: o app reabre o terminal do bot entre um pedido e outro. No menu do bot, \"Nova conversa\" começa do zero quando você quiser."
+        },
+        {
+          "tipo": "melhoria",
+          "area": "Bots",
+          "titulo": "Pausar para de verdade",
+          "texto": "Pausar o bot agora interrompe também o pedido que estava em andamento, e não só os próximos."
+        },
+        {
+          "tipo": "melhoria",
+          "area": "Rotinas",
+          "titulo": "Rotina de bot com o resultado real",
+          "texto": "A rotina que manda um pedido ao bot só aparece como concluída quando o bot responde. Falha, parada, login vencido ou limite de uso aparecem no histórico; você recebe um aviso na primeira falha, e dez falhas seguidas desligam a rotina."
+        },
+        {
+          "tipo": "melhoria",
+          "area": "Canais",
+          "titulo": "Respostas inteiras no Telegram e no Slack",
+          "texto": "Respostas longas chegam em várias mensagens, com negrito, código e links formatados, em vez de cortadas e com os símbolos à mostra. Voz, foto e documento enviados ao bot recebem um aviso de que, por enquanto, ele só lê texto."
+        },
+        {
+          "tipo": "melhoria",
+          "area": "Bots",
+          "titulo": "Um número só em \"Precisa de você\"",
+          "texto": "A lista de bots, os detalhes e a conversa mostram a mesma contagem do que espera por você, com uma linha para cada pendência."
+        },
+        {
+          "tipo": "seguranca",
+          "area": "Bots",
+          "titulo": "Permissões conferidas antes de responder sozinho",
+          "texto": "Antes de permitir sozinho um comando no terminal do bot, o app confere a lista de comandos bloqueados com o comando inteiro, e só responde a diálogos de permissão reais da CLI, nunca a um texto que imita um. Apagar pastas com rm -r passa a pedir você."
+        },
+        {
+          "tipo": "seguranca",
+          "area": "Bots",
+          "titulo": "O que você mandou esquecer não volta",
+          "texto": "Um fato que você apagou da memória do bot não é gravado de novo, nem por ele nem por conteúdo de terceiros."
+        },
+        {
+          "tipo": "seguranca",
+          "area": "Computador dos bots",
+          "titulo": "Páginas lidas num espaço isolado",
+          "texto": "O app lê e observa as páginas do computador do bot num espaço separado do código do site, que não consegue interferir na leitura."
+        },
+        {
+          "tipo": "seguranca",
+          "area": "Privacidade",
+          "titulo": "Mais segredos escondidos",
+          "texto": "Cookies, tokens JWT, códigos de login devolvidos na URL e variáveis como API_KEY ou ACCESS_TOKEN passam a ser escondidos antes de o texto chegar ao bot ou aos registros."
+        }
+      ],
+      "video": {
+        "arquivo": "videos/v0.1.22.mp4",
+        "capa": "videos/v0.1.22.jpg",
+        "legendas": "videos/v0.1.22.vtt",
+        "titulo": "Tour da 0.1.22: bots que não deixam pedido pela metade",
+        "duracao": "1:31"
+      }
+    },
+    {
       "versao": "0.1.21",
       "data": "2026-11-24",
       "titulo": "Bots que trabalham sozinhos",

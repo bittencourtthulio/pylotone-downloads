@@ -1,0 +1,105 @@
+WEBVTT
+
+1
+00:00:00.600 --> 00:00:04.057
+Chegou a versão 0.1.22 do Pylot.One.
+
+2
+00:00:04.107 --> 00:00:07.365
+O tema desta versão: bots que não deixam pedido pela metade.
+
+3
+00:00:09.965 --> 00:00:12.427
+Primeiro, uma correção no computador do bot.
+
+4
+00:00:12.477 --> 00:00:16.051
+Abro o Lino, ligo o computador ao lado da conversa e abro o navegador.
+
+5
+00:00:16.711 --> 00:00:19.470
+Digito o endereço da loja, e a página aparece inteira.
+
+6
+00:00:19.520 --> 00:00:22.795
+Antes, nessa largura, só o endereço e o título da aba apareciam.
+
+7
+00:00:25.095 --> 00:00:26.953
+Nenhum pedido fica mais preso.
+
+8
+00:00:27.003 --> 00:00:29.991
+Se o bot termina sem responder, o app manda um lembrete.
+
+9
+00:00:30.041 --> 00:00:32.783
+Se ele continuar calado, o pedido fecha com o motivo,
+
+10
+00:00:32.833 --> 00:00:34.156
+e o próximo da fila segue.
+
+11
+00:00:36.756 --> 00:00:38.306
+Agora, um pedido mais longo:
+
+12
+00:00:38.356 --> 00:00:40.060
+revisar os textos da vitrine.
+
+13
+00:00:40.110 --> 00:00:41.404
+O bot abre um agente.
+
+14
+00:00:44.064 --> 00:00:46.537
+No menu do Lino, Nova conversa começa do zero.
+
+15
+00:00:46.587 --> 00:00:48.876
+E Pausar agora para também o pedido em andamento:
+
+16
+00:00:48.926 --> 00:00:50.252
+o app avisa quantos parou.
+
+17
+00:00:52.752 --> 00:00:55.187
+E o que você muda no bot, como a personalidade,
+
+18
+00:00:55.237 --> 00:00:59.000
+as skills, a CLI ou o modelo, vale já no próximo pedido.
+
+19
+00:01:01.000 --> 00:01:04.826
+No Telegram e no Slack, respostas longas chegam inteiras e formatadas.
+
+20
+00:01:04.876 --> 00:01:07.842
+Voz, foto e documento recebem um aviso, em vez de sumir.
+
+21
+00:01:07.892 --> 00:01:10.718
+E as rotinas de bot mostram o resultado real de cada pedido.
+
+22
+00:01:12.718 --> 00:01:16.655
+Na segurança, o app confere os comandos bloqueados antes de permitir sozinho,
+
+23
+00:01:16.705 --> 00:01:18.889
+só responde a diálogos de permissão de verdade,
+
+24
+00:01:18.939 --> 00:01:21.211
+e o que você manda o bot esquecer não volta.
+
+25
+00:01:23.111 --> 00:01:26.430
+Atualize pelo app e deixe os seus bots terminarem o que começam.
+
+26
+00:01:26.480 --> 00:01:27.558
+Até a próxima versão.
